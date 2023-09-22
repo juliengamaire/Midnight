@@ -6,29 +6,100 @@ using UnityEngine.UI;
 using TMPro;
 using System.IO;
 using System.Threading.Tasks;
+using SFB;
+using System.Linq;
 
 public class JSONManager : MonoBehaviour
 {
+    private enum Genre
+    {
+        NONE,
+        ACID_ROCK,
+        ALT_ROCK,
+        ALT_METAL,
+        BLACK,
+        BLACKENED_DEATH,
+        BLUEGRASS,
+        BLUES,
+        BLUES_ROCK,
+        CELTIC,
+        DEATH_METAL,
+        DEATHGRIND,
+        DJENT,
+        DOOM,
+        FOLK,
+        GARAGE,
+        GLAM,
+        GOREGRIND,
+        GOTH,
+        GRINDCORE,
+        GROOVE,
+        GRUNGE,
+        HAIR,
+        HARD_ROCK,
+        HARDCORE,
+        HEAVY_METAL,
+        INDUSTRIAL,
+        MATH,
+        MELODEATH,
+        METAL,
+        METAL_MISC,
+        METALCORE,
+        METALSTEP,
+        MODERN_PROG,
+        MODERN_DEATHCORE,
+        NEOCLASSICAL,
+        NU,
+        PIRATE,
+        POP_METAL,
+        POST,
+        PROG,
+        POWER,
+        PSYCHEDELIC,
+        PUNK,
+        PUNK_ROCK,
+        ROCK,
+        ROCK_N_ROLL,
+        ROCKABILLY,
+        SLUDGE,
+        SOUTHERN,
+        STONER,
+        SYMPHONIC,
+        TECH_DEATH,
+        TRASH,
+        VIKING
+    }
+
     [SerializeField]
     private LoginManager _loginManager;
 
     [SerializeField]
-    private TextAsset jsonFile;
-
+    private TMP_InputField _searchPlaylistField;
     [SerializeField]
-    private TMP_InputField _searchField;
+    private TMP_InputField _searchAlbumField;
     [SerializeField]
-    private TMP_InputField _genreField;
+    private TMP_InputField _artistField;
     [SerializeField]
-    private Button _feedButton;
+    private TMP_Dropdown _genreDropdown;
+    [SerializeField]
+    private Button _feedPlaylistButton;
+    [SerializeField]
+    private Button _feedAlbumButton;
+    [SerializeField]
+    private Button _artistButton;
     [SerializeField]
     private Button _saveButton;
     [SerializeField]
+    private Button _jsonImportButton;
+    [SerializeField]
     private TextMeshProUGUI _loadingText;
+    [SerializeField]
+    private TextMeshProUGUI _jsonPathText;
 
     private SpotifyClient client;
 
     private List<PlaylistTrack<IPlayableItem>> _lastTracksList;
+    private FullAlbum _lastFullAlbum;
     private Dictionary<string, Album> _albumsInDataBase = new Dictionary<string, Album>();
     private Dictionary<string, Album> _newAlbums = new Dictionary<string, Album>();
     private Dictionary<string, string> _playlistIdsInDataBase = new Dictionary<string, string>();
@@ -40,10 +111,15 @@ public class JSONManager : MonoBehaviour
     {
         _loginManager.OnClientConnected += _loginManager_OnClientConnected;
 
-        _searchField.interactable = false;
-        _genreField.interactable = false;
-        _feedButton.interactable = false;
+        _searchPlaylistField.interactable = false;
+        _searchAlbumField.interactable = false;
+        _artistField.interactable = false;
+        _genreDropdown.interactable = false;
+        _feedPlaylistButton.interactable = false;
+        _feedAlbumButton.interactable = false;
+        _artistButton.interactable = false;
         _saveButton.interactable = false;
+        _jsonImportButton.interactable = false;
     }
 
     public void OnDestroy()
@@ -53,62 +129,151 @@ public class JSONManager : MonoBehaviour
 
     private void _loginManager_OnClientConnected()
     {
-        LoadJSON();
-
         client = SpotifyService.Instance.GetSpotifyClient();
 
-        _searchField.interactable = true;
-        _genreField.interactable = true;
-        _feedButton.interactable = true;
+        
+        _jsonImportButton.interactable = true;
 
-        if (_feedButton != null)
+        if (_feedPlaylistButton != null)
         {
-            _feedButton.onClick.AddListener(this.OnPerformSearch);
+            _feedPlaylistButton.onClick.AddListener(this.OnPerformPlaylistSearch);
+        }
+
+        if (_feedAlbumButton != null)
+        {
+            _feedAlbumButton.onClick.AddListener(this.OnPerformAlbumSearch);
+        }
+
+        if (_artistButton != null)
+        {
+            _artistButton.onClick.AddListener(this.TryAddGenreToArtist);
         }
 
         if (_saveButton != null)
         {
             _saveButton.onClick.AddListener(this.SaveUpdatedDataBase);
         }
+
+        if (_jsonImportButton != null)
+        {
+            _jsonImportButton.onClick.AddListener(this.OpenFileExplorer);
+        }
+
+        _genreDropdown.ClearOptions();
+        var enumValues = Enum.GetValues(typeof(Genre));
+        foreach (var value in enumValues)
+        {
+            _genreDropdown.options.Add(new TMP_Dropdown.OptionData(value.ToString()));
+        }
     }
 
-    
-
-    private void LoadJSON()
+    private void TryAddGenreToArtist()
     {
-        _albumsInDataBase.Clear();
-        
-        if (jsonFile != null && !jsonFile.text.Equals(string.Empty))
+        if (_artistField != null && _genreDropdown != null)
         {
-            DataBase dataBase = JsonUtility.FromJson<DataBase>(jsonFile.text);
-
-            foreach (PlaylistId playlistId in dataBase.PlaylistIdsAlreadyFetched)
+            if (_artistField.text.Equals(string.Empty))
             {
-                _playlistIdsInDataBase.Add(playlistId.Id, playlistId.Genre);
+                Debug.LogWarning("There's no artist to search");
+                return;
+            }
+            if (_genreDropdown.options[_genreDropdown.value].text.ToLowerInvariant().Equals("none"))
+            {
+                Debug.LogWarning("There's no genre to attribute");
+                return;
             }
 
-            foreach (Album album in dataBase.Albums)
+
+            string newGenre = _genreDropdown.options[_genreDropdown.value].text.ToLowerInvariant();
+            string artist = _artistField.text;
+            bool isArtistFound;
+
+            foreach (Album album in _albumsInDataBase.Values)
             {
-                _albumsInDataBase.Add(album.Id, album);
+                isArtistFound = album.Artists.Any(a => a.ToLowerInvariant().Equals(artist.ToLowerInvariant()));
+                if (isArtistFound)
+                {
+                    album.AddGenre(newGenre);
+                    _newGenreForAlbums++;
+                }
+            }
+
+            UpdateIHM();
+        }
+    }
+
+    private void OpenFileExplorer()
+    {
+        string[] paths = StandaloneFileBrowser.OpenFilePanel("Choose JSON file", "", "json", false);
+        if (paths.Length == 1)
+        {
+            if (!string.IsNullOrEmpty(paths[0]))
+            {
+                _jsonPathText.text = $"JSON input path : {paths[0]}";
+                LoadJSON(paths[0]);
             }
         }
     }
 
-    private void WriteUpdatedJSON(DataBase updatedDataBase)
+    private void LoadJSON(string path)
     {
-        string jsonUpdated = JsonUtility.ToJson(updatedDataBase);
-        File.WriteAllText(Application.dataPath + "/Data/ma_base_de_donnees.json", jsonUpdated);
+        string jsonContent = File.ReadAllText(path);
 
-        Debug.Log("File Saved !");
+        if (jsonContent != null && !jsonContent.Equals(string.Empty))
+        {
+            _albumsInDataBase.Clear();
+
+            DataBase dataBase = JsonUtility.FromJson<DataBase>(jsonContent);
+
+            if (dataBase != null)
+            {
+                foreach (PlaylistId playlistId in dataBase.PlaylistIdsAlreadyFetched)
+                {
+                    _playlistIdsInDataBase.Add(playlistId.Id, playlistId.Genre);
+                }
+
+                foreach (Album album in dataBase.Albums)
+                {
+                    _albumsInDataBase.Add(album.Id, album);
+                }
+
+                _searchPlaylistField.interactable = true;
+                _searchAlbumField.interactable = true;
+                _artistField.interactable = true;
+                _genreDropdown.interactable = true;
+                _feedPlaylistButton.interactable = true;
+                _feedAlbumButton.interactable = true;
+                _artistButton.interactable = true;
+            }
+        }
     }
 
     private void SaveUpdatedDataBase()
+    {
+        string path = StandaloneFileBrowser.SaveFilePanel("Save JSON File", "", "VinylStoreDataBase", "json");
+
+        if (!string.IsNullOrEmpty(path))
+        {
+            SaveJsonFile(path);
+        }
+
+#if UNITY_EDITOR
+        UnityEditor.EditorApplication.isPlaying = false;
+#else
+        Application.Quit();
+#endif
+    }
+
+    private void SaveJsonFile(string fileName)
     {
         DataBase updatedDataBase = new DataBase();
 
         AddNewPlaylistIds(updatedDataBase);
         AddNewAlbums(updatedDataBase);
-        WriteUpdatedJSON(updatedDataBase);
+
+        string jsonUpdated = JsonUtility.ToJson(updatedDataBase);
+        File.WriteAllText(fileName, jsonUpdated);
+        _loadingText.text = $"JSON file saved at {fileName}";
+        Debug.Log($"JSON file saved at {fileName}");
     }
 
     private void AddNewAlbums(DataBase updatedDataBase)
@@ -149,43 +314,77 @@ public class JSONManager : MonoBehaviour
         }
         foreach (KeyValuePair<string, string> pair in _playlistIdsInDataBase)
         {
-            updatedPlaylistIds[i].Id = pair.Key;
-            updatedPlaylistIds[i].Genre = pair.Value;
+            PlaylistId item = new PlaylistId();
+            item.Id = pair.Key;
+            item.Genre = pair.Value;
+            updatedPlaylistIds[i] = item;
             i++;
         }
 
         updatedDataBase.PlaylistIdsAlreadyFetched = updatedPlaylistIds;
     }
 
-    private async void OnPerformSearch()
+    private async void OnPerformPlaylistSearch()
     {
-        if (client != null && _searchField != null && _genreField != null)
+        if (client != null && _searchPlaylistField != null && _genreDropdown != null)
         {
-            if (_searchField.text.Equals(string.Empty))
+            if (_searchPlaylistField.text.Equals(string.Empty))
             {
                 Debug.LogWarning("There's no playlist ID to search");
                 return;
             }
-            if (_genreField.text.Equals(string.Empty))
+            if (_genreDropdown.options[_genreDropdown.value].text.ToLowerInvariant().Equals("none"))
             {
                 Debug.LogWarning("There's no genre to attribute");
                 return;
             }
-            if (_playlistIdsInDataBase.ContainsKey(_searchField.text))
+            if (_playlistIdsInDataBase.ContainsKey(_searchPlaylistField.text))
             {
                 Debug.LogWarning("This playlist has already been fetch");
                 return;
             }
             
 
-            string query = _searchField.text;
-            string genre = _genreField.text;
+            string query = _searchPlaylistField.text;
+            string genre = _genreDropdown.options[_genreDropdown.value].text.ToLowerInvariant();
 
             _newPlaylistIds.Add(query, genre);
 
             _lastTracksList = await GetAllTracks(query);
 
             CreateAlbumSelection(genre);
+
+            UpdateIHM();
+        }
+    }
+
+    private async void OnPerformAlbumSearch()
+    {
+        if (client != null && _searchAlbumField != null && _genreDropdown != null)
+        {
+            if (_searchAlbumField.text.Equals(string.Empty))
+            {
+                Debug.LogWarning("There's no album ID to search");
+                return;
+            }
+            if (_genreDropdown.options[_genreDropdown.value].text.ToLowerInvariant().Equals("none"))
+            {
+                Debug.LogWarning("There's no genre to attribute");
+                return;
+            }
+            if (_albumsInDataBase.ContainsKey(_searchAlbumField.text))
+            {
+                _albumsInDataBase[_searchAlbumField.text].AddGenre(_genreDropdown.options[_genreDropdown.value].text);
+                return;
+            }
+
+
+            string query = _searchAlbumField.text;
+            string genre = _genreDropdown.options[_genreDropdown.value].text.ToLowerInvariant();
+
+            _lastFullAlbum = await client.Albums.Get(query);
+
+            CreateAndAddNewAlbum(genre);
 
             UpdateIHM();
         }
@@ -238,6 +437,33 @@ public class JSONManager : MonoBehaviour
             newAlbum.Uri = track.Album.Uri;
 
             _newAlbums.Add(newAlbum.Id, newAlbum);
+        }
+    }
+
+    private void CreateAndAddNewAlbum(string genre)
+    {
+        if (_lastFullAlbum != null)
+        {
+            // if album has already being fecthed
+            if (_newAlbums.ContainsKey(_lastFullAlbum.Id))
+            {
+                return;
+            }
+
+            if (_lastFullAlbum.AlbumType.Equals("album"))
+            {
+                Album newAlbum = new Album();
+                newAlbum.Artists = ArtistsToString(_lastFullAlbum.Artists);
+                newAlbum.AddGenre(genre);
+                newAlbum.Href = _lastFullAlbum.Href;
+                newAlbum.Id = _lastFullAlbum.Id;
+                newAlbum.ImagesUrls = ImagesToString(_lastFullAlbum.Images);
+                newAlbum.Name = _lastFullAlbum.Name;
+                newAlbum.ReleaseDate = _lastFullAlbum.ReleaseDate;
+                newAlbum.Uri = _lastFullAlbum.Uri;
+
+                _newAlbums.Add(newAlbum.Id, newAlbum);
+            }
         }
     }
 

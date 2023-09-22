@@ -13,6 +13,9 @@ public class LoginManager : SpotifyServiceListener
 {
     public bool ServiceAuthOnStart = false;
 
+    public delegate void ClientConnected();
+    public event ClientConnected OnClientConnected;
+
     [SerializeField]
     private Button _signInButton, _signOutButton;
     [SerializeField]
@@ -50,7 +53,7 @@ public class LoginManager : SpotifyServiceListener
 
         if (isConnected)
         {
-            StartCoroutine(LoadSceneAsync("VinylStore"));
+            OnClientConnected?.Invoke();
         }
     }
 
@@ -77,22 +80,22 @@ public class LoginManager : SpotifyServiceListener
         }
     }
 
-    private IEnumerator LoadSceneAsync(string sceneName)
-    {
-        // Start loading the scene asynchronously
-        AsyncOperation asyncOperation = SceneManager.LoadSceneAsync(sceneName);
+    //private IEnumerator LoadSceneAsync(string sceneName)
+    //{
+    //    // Start loading the scene asynchronously
+    //    AsyncOperation asyncOperation = SceneManager.LoadSceneAsync(sceneName);
 
-        // While the scene is not fully loaded
-        while (!asyncOperation.isDone)
-        {
-            // Update the progress bar or loading text
-            float progress = Mathf.Clamp01(asyncOperation.progress / 0.9f);
-            _loadingText.text = $"Loading : {progress * 100}%";
+    //    // While the scene is not fully loaded
+    //    while (!asyncOperation.isDone)
+    //    {
+    //        // Update the progress bar or loading text
+    //        float progress = Mathf.Clamp01(asyncOperation.progress / 0.9f);
+    //        _loadingText.text = $"Loading : {progress * 100}%";
 
-            // Wait for the next frame
-            yield return null;
-        }
-    }
+    //        // Wait for the next frame
+    //        yield return null;
+    //    }
+    //}
 
     
 }

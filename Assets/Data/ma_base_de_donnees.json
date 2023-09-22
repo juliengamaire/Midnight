@@ -1,0 +1,2373 @@
+{
+    "PlaylistIdsAlreadyFetched": [
+        {
+            "Id": "1vvaZMIwtl43a58QkGOcjT",
+            "Genre": "trash-metal"
+        }
+    ],
+    "Albums": [
+        {
+            "Artists": [
+                "Megadeth"
+            ],
+            "Genres": [
+                "trash-metal"
+            ],
+            "Href": "https://api.spotify.com/v1/albums/0qaLL09EtF1hiUis7PRvaJ",
+            "Id": "0qaLL09EtF1hiUis7PRvaJ",
+            "ImagesUrls": [
+                "https://i.scdn.co/image/ab67616d0000b273be9fa5a89479b6af481938a0",
+                "https://i.scdn.co/image/ab67616d00001e02be9fa5a89479b6af481938a0",
+                "https://i.scdn.co/image/ab67616d00004851be9fa5a89479b6af481938a0"
+            ],
+            "Name": "Rust In Peace (2004 Remix / Expanded Edition)",
+            "ReleaseDate": "1990-10-04",
+            "Uri": "spotify:album:0qaLL09EtF1hiUis7PRvaJ"
+        },
+        {
+            "Artists": [
+                "Metallica"
+            ],
+            "Genres": [
+                "trash-metal"
+            ],
+            "Href": "https://api.spotify.com/v1/albums/2Lq2qX3hYhiuPckC8Flj21",
+            "Id": "2Lq2qX3hYhiuPckC8Flj21",
+            "ImagesUrls": [
+                "https://i.scdn.co/image/ab67616d0000b273668e3aca3167e6e569a9aa20",
+                "https://i.scdn.co/image/ab67616d00001e02668e3aca3167e6e569a9aa20",
+                "https://i.scdn.co/image/ab67616d00004851668e3aca3167e6e569a9aa20"
+            ],
+            "Name": "Master Of Puppets (Remastered)",
+            "ReleaseDate": "1986-03-03",
+            "Uri": "spotify:album:2Lq2qX3hYhiuPckC8Flj21"
+        },
+        {
+            "Artists": [
+                "Slayer"
+            ],
+            "Genres": [
+                "trash-metal"
+            ],
+            "Href": "https://api.spotify.com/v1/albums/5v5BfkxWDAKTkzrXl3H0mU",
+            "Id": "5v5BfkxWDAKTkzrXl3H0mU",
+            "ImagesUrls": [
+                "https://i.scdn.co/image/ab67616d0000b2731530f31c8d4197777b70ee5d",
+                "https://i.scdn.co/image/ab67616d00001e021530f31c8d4197777b70ee5d",
+                "https://i.scdn.co/image/ab67616d000048511530f31c8d4197777b70ee5d"
+            ],
+            "Name": "Reign In Blood (Expanded)",
+            "ReleaseDate": "1986-01-01",
+            "Uri": "spotify:album:5v5BfkxWDAKTkzrXl3H0mU"
+        },
+        {
+            "Artists": [
+                "Anthrax"
+            ],
+            "Genres": [
+                "trash-metal"
+            ],
+            "Href": "https://api.spotify.com/v1/albums/4Y2jEzU70sLpTCMCl6JE0t",
+            "Id": "4Y2jEzU70sLpTCMCl6JE0t",
+            "ImagesUrls": [
+                "https://i.scdn.co/image/ab67616d0000b2739547c3343626604ea638967f",
+                "https://i.scdn.co/image/ab67616d00001e029547c3343626604ea638967f",
+                "https://i.scdn.co/image/ab67616d000048519547c3343626604ea638967f"
+            ],
+            "Name": "Among The Living",
+            "ReleaseDate": "1987-03",
+            "Uri": "spotify:album:4Y2jEzU70sLpTCMCl6JE0t"
+        },
+        {
+            "Artists": [
+                "Testament"
+            ],
+            "Genres": [
+                "trash-metal"
+            ],
+            "Href": "https://api.spotify.com/v1/albums/6HELG1uNTkBj4OwJcC9fY9",
+            "Id": "6HELG1uNTkBj4OwJcC9fY9",
+            "ImagesUrls": [
+                "https://i.scdn.co/image/ab67616d0000b273e9bb3d1035071708db60c2d4",
+                "https://i.scdn.co/image/ab67616d00001e02e9bb3d1035071708db60c2d4",
+                "https://i.scdn.co/image/ab67616d00004851e9bb3d1035071708db60c2d4"
+            ],
+            "Name": "The Legacy",
+            "ReleaseDate": "1987-04-21",
+            "Uri": "spotify:album:6HELG1uNTkBj4OwJcC9fY9"
+        },
+        {
+            "Artists": [
+                "Testament"
+            ],
+            "Genres": [
+                "trash-metal"
+            ],
+            "Href": "https://api.spotify.com/v1/albums/1i0xUSNR8hWBIeaDSnN569",
+            "Id": "1i0xUSNR8hWBIeaDSnN569",
+            "ImagesUrls": [
+                "https://i.scdn.co/image/ab67616d0000b27391b5e0a20d45f2b9227f656d",
+                "https://i.scdn.co/image/ab67616d00001e0291b5e0a20d45f2b9227f656d",
+                "https://i.scdn.co/image/ab67616d0000485191b5e0a20d45f2b9227f656d"
+            ],
+            "Name": "The New Order",
+            "ReleaseDate": "1988-04-26",
+            "Uri": "spotify:album:1i0xUSNR8hWBIeaDSnN569"
+        },
+        {
+            "Artists": [
+                "Testament"
+            ],
+            "Genres": [
+                "trash-metal"
+            ],
+            "Href": "https://api.spotify.com/v1/albums/7lNeBg16EP03ifo5Wutq52",
+            "Id": "7lNeBg16EP03ifo5Wutq52",
+            "ImagesUrls": [
+                "https://i.scdn.co/image/ab67616d0000b273ba318cd383b7eaf1dda1f533",
+                "https://i.scdn.co/image/ab67616d00001e02ba318cd383b7eaf1dda1f533",
+                "https://i.scdn.co/image/ab67616d00004851ba318cd383b7eaf1dda1f533"
+            ],
+            "Name": "Practice What You Preach",
+            "ReleaseDate": "1989-07-25",
+            "Uri": "spotify:album:7lNeBg16EP03ifo5Wutq52"
+        },
+        {
+            "Artists": [
+                "Exodus"
+            ],
+            "Genres": [
+                "trash-metal"
+            ],
+            "Href": "https://api.spotify.com/v1/albums/1IfG1UITBGxTIIVZ3qgUrD",
+            "Id": "1IfG1UITBGxTIIVZ3qgUrD",
+            "ImagesUrls": [
+                "https://i.scdn.co/image/ab67616d0000b2735d958268f9f9dcb4eb1fbcb1",
+                "https://i.scdn.co/image/ab67616d00001e025d958268f9f9dcb4eb1fbcb1",
+                "https://i.scdn.co/image/ab67616d000048515d958268f9f9dcb4eb1fbcb1"
+            ],
+            "Name": "Bonded by Blood",
+            "ReleaseDate": "1985",
+            "Uri": "spotify:album:1IfG1UITBGxTIIVZ3qgUrD"
+        },
+        {
+            "Artists": [
+                "Exodus"
+            ],
+            "Genres": [
+                "trash-metal"
+            ],
+            "Href": "https://api.spotify.com/v1/albums/1gMwtIEeUJCo5rB2m5kx9m",
+            "Id": "1gMwtIEeUJCo5rB2m5kx9m",
+            "ImagesUrls": [
+                "https://i.scdn.co/image/ab67616d0000b2739edc8297b84635fd3975430d",
+                "https://i.scdn.co/image/ab67616d00001e029edc8297b84635fd3975430d",
+                "https://i.scdn.co/image/ab67616d000048519edc8297b84635fd3975430d"
+            ],
+            "Name": "Pleasures of the Flesh",
+            "ReleaseDate": "1987",
+            "Uri": "spotify:album:1gMwtIEeUJCo5rB2m5kx9m"
+        },
+        {
+            "Artists": [
+                "Exodus"
+            ],
+            "Genres": [
+                "trash-metal"
+            ],
+            "Href": "https://api.spotify.com/v1/albums/0bhhJIaAGRxXAyBSsxVRiy",
+            "Id": "0bhhJIaAGRxXAyBSsxVRiy",
+            "ImagesUrls": [
+                "https://i.scdn.co/image/ab67616d0000b2732ef4d96c04c376e38d1b481b",
+                "https://i.scdn.co/image/ab67616d00001e022ef4d96c04c376e38d1b481b",
+                "https://i.scdn.co/image/ab67616d000048512ef4d96c04c376e38d1b481b"
+            ],
+            "Name": "Fabulous Disaster",
+            "ReleaseDate": "1989",
+            "Uri": "spotify:album:0bhhJIaAGRxXAyBSsxVRiy"
+        },
+        {
+            "Artists": [
+                "Kreator"
+            ],
+            "Genres": [
+                "trash-metal"
+            ],
+            "Href": "https://api.spotify.com/v1/albums/5RP8ddfJnPDYvUjCbBS2Rc",
+            "Id": "5RP8ddfJnPDYvUjCbBS2Rc",
+            "ImagesUrls": [
+                "https://i.scdn.co/image/ab67616d0000b27306d86b0de6abe034770ea301",
+                "https://i.scdn.co/image/ab67616d00001e0206d86b0de6abe034770ea301",
+                "https://i.scdn.co/image/ab67616d0000485106d86b0de6abe034770ea301"
+            ],
+            "Name": "Pleasure to Kill",
+            "ReleaseDate": "1986-04-01",
+            "Uri": "spotify:album:5RP8ddfJnPDYvUjCbBS2Rc"
+        },
+        {
+            "Artists": [
+                "Kreator"
+            ],
+            "Genres": [
+                "trash-metal"
+            ],
+            "Href": "https://api.spotify.com/v1/albums/69ighkeqotAHlq4tchzIXv",
+            "Id": "69ighkeqotAHlq4tchzIXv",
+            "ImagesUrls": [
+                "https://i.scdn.co/image/ab67616d0000b2734411e45776efd0e329170abf",
+                "https://i.scdn.co/image/ab67616d00001e024411e45776efd0e329170abf",
+                "https://i.scdn.co/image/ab67616d000048514411e45776efd0e329170abf"
+            ],
+            "Name": "Endless Pain",
+            "ReleaseDate": "1985",
+            "Uri": "spotify:album:69ighkeqotAHlq4tchzIXv"
+        },
+        {
+            "Artists": [
+                "Kreator"
+            ],
+            "Genres": [
+                "trash-metal"
+            ],
+            "Href": "https://api.spotify.com/v1/albums/5iN66znBhr5nr0nuGYDG2A",
+            "Id": "5iN66znBhr5nr0nuGYDG2A",
+            "ImagesUrls": [
+                "https://i.scdn.co/image/ab67616d0000b273d06ed432e90b2d4b97354bf6",
+                "https://i.scdn.co/image/ab67616d00001e02d06ed432e90b2d4b97354bf6",
+                "https://i.scdn.co/image/ab67616d00004851d06ed432e90b2d4b97354bf6"
+            ],
+            "Name": "Extreme Aggression",
+            "ReleaseDate": "1989",
+            "Uri": "spotify:album:5iN66znBhr5nr0nuGYDG2A"
+        },
+        {
+            "Artists": [
+                "Kreator"
+            ],
+            "Genres": [
+                "trash-metal"
+            ],
+            "Href": "https://api.spotify.com/v1/albums/1S7SXhbh0x64DyXQVfACJk",
+            "Id": "1S7SXhbh0x64DyXQVfACJk",
+            "ImagesUrls": [
+                "https://i.scdn.co/image/ab67616d0000b273f97152941372049e5d94477f",
+                "https://i.scdn.co/image/ab67616d00001e02f97152941372049e5d94477f",
+                "https://i.scdn.co/image/ab67616d00004851f97152941372049e5d94477f"
+            ],
+            "Name": "Coma of Souls",
+            "ReleaseDate": "1990-11-06",
+            "Uri": "spotify:album:1S7SXhbh0x64DyXQVfACJk"
+        },
+        {
+            "Artists": [
+                "Metallica"
+            ],
+            "Genres": [
+                "trash-metal"
+            ],
+            "Href": "https://api.spotify.com/v1/albums/05DePtm7oQMdL3Uzw2Jmsc",
+            "Id": "05DePtm7oQMdL3Uzw2Jmsc",
+            "ImagesUrls": [
+                "https://i.scdn.co/image/ab67616d0000b2739ad3e9959f48d513886b8933",
+                "https://i.scdn.co/image/ab67616d00001e029ad3e9959f48d513886b8933",
+                "https://i.scdn.co/image/ab67616d000048519ad3e9959f48d513886b8933"
+            ],
+            "Name": "Ride The Lightning (Remastered)",
+            "ReleaseDate": "1984-07-26",
+            "Uri": "spotify:album:05DePtm7oQMdL3Uzw2Jmsc"
+        },
+        {
+            "Artists": [
+                "Metallica"
+            ],
+            "Genres": [
+                "trash-metal"
+            ],
+            "Href": "https://api.spotify.com/v1/albums/1aGapZGHBovnmhwqVNI6JZ",
+            "Id": "1aGapZGHBovnmhwqVNI6JZ",
+            "ImagesUrls": [
+                "https://i.scdn.co/image/ab67616d0000b273d30fcf6340831edbafb45e38",
+                "https://i.scdn.co/image/ab67616d00001e02d30fcf6340831edbafb45e38",
+                "https://i.scdn.co/image/ab67616d00004851d30fcf6340831edbafb45e38"
+            ],
+            "Name": "Kill 'Em All (Remastered)",
+            "ReleaseDate": "1983-07-24",
+            "Uri": "spotify:album:1aGapZGHBovnmhwqVNI6JZ"
+        },
+        {
+            "Artists": [
+                "Metallica"
+            ],
+            "Genres": [
+                "trash-metal"
+            ],
+            "Href": "https://api.spotify.com/v1/albums/6jZ1z25PyF4Yd3kHxt9rl1",
+            "Id": "6jZ1z25PyF4Yd3kHxt9rl1",
+            "ImagesUrls": [
+                "https://i.scdn.co/image/ab67616d0000b273fe896727e3db1027ed72d885",
+                "https://i.scdn.co/image/ab67616d00001e02fe896727e3db1027ed72d885",
+                "https://i.scdn.co/image/ab67616d00004851fe896727e3db1027ed72d885"
+            ],
+            "Name": "…And Justice for All (Remastered)",
+            "ReleaseDate": "1988-08-25",
+            "Uri": "spotify:album:6jZ1z25PyF4Yd3kHxt9rl1"
+        },
+        {
+            "Artists": [
+                "Megadeth"
+            ],
+            "Genres": [
+                "trash-metal"
+            ],
+            "Href": "https://api.spotify.com/v1/albums/4U8ZF5zDIRy4lBnnXBN2uO",
+            "Id": "4U8ZF5zDIRy4lBnnXBN2uO",
+            "ImagesUrls": [
+                "https://i.scdn.co/image/ab67616d0000b2738fc06398d8852596d4981252",
+                "https://i.scdn.co/image/ab67616d00001e028fc06398d8852596d4981252",
+                "https://i.scdn.co/image/ab67616d000048518fc06398d8852596d4981252"
+            ],
+            "Name": "Peace Sells...But Who's Buying? (Expanded Edition - Remastered)",
+            "ReleaseDate": "1986",
+            "Uri": "spotify:album:4U8ZF5zDIRy4lBnnXBN2uO"
+        },
+        {
+            "Artists": [
+                "Megadeth"
+            ],
+            "Genres": [
+                "trash-metal"
+            ],
+            "Href": "https://api.spotify.com/v1/albums/5f4vbRLrRmoDH0zpdQnyrE",
+            "Id": "5f4vbRLrRmoDH0zpdQnyrE",
+            "ImagesUrls": [
+                "https://i.scdn.co/image/ab67616d0000b273e949e0e6c9eac438a68f5b37",
+                "https://i.scdn.co/image/ab67616d00001e02e949e0e6c9eac438a68f5b37",
+                "https://i.scdn.co/image/ab67616d00004851e949e0e6c9eac438a68f5b37"
+            ],
+            "Name": "So Far, So Good...So What! (Expanded Edition - Remastered)",
+            "ReleaseDate": "1988-01-26",
+            "Uri": "spotify:album:5f4vbRLrRmoDH0zpdQnyrE"
+        },
+        {
+            "Artists": [
+                "Megadeth"
+            ],
+            "Genres": [
+                "trash-metal"
+            ],
+            "Href": "https://api.spotify.com/v1/albums/0TFQuO4m3XR5pTJCFS88Qk",
+            "Id": "0TFQuO4m3XR5pTJCFS88Qk",
+            "ImagesUrls": [
+                "https://i.scdn.co/image/ab67616d0000b2732df329bfcee1cbf47dfc7032",
+                "https://i.scdn.co/image/ab67616d00001e022df329bfcee1cbf47dfc7032",
+                "https://i.scdn.co/image/ab67616d000048512df329bfcee1cbf47dfc7032"
+            ],
+            "Name": "Killing Is My Business...And Business Is Good!",
+            "ReleaseDate": "1985",
+            "Uri": "spotify:album:0TFQuO4m3XR5pTJCFS88Qk"
+        },
+        {
+            "Artists": [
+                "Slayer"
+            ],
+            "Genres": [
+                "trash-metal"
+            ],
+            "Href": "https://api.spotify.com/v1/albums/3D6BriGykla1Qi2YzeoE7X",
+            "Id": "3D6BriGykla1Qi2YzeoE7X",
+            "ImagesUrls": [
+                "https://i.scdn.co/image/ab67616d0000b27309f13998cfda5cdaf484f051",
+                "https://i.scdn.co/image/ab67616d00001e0209f13998cfda5cdaf484f051",
+                "https://i.scdn.co/image/ab67616d0000485109f13998cfda5cdaf484f051"
+            ],
+            "Name": "Show No Mercy",
+            "ReleaseDate": "1983-12-03",
+            "Uri": "spotify:album:3D6BriGykla1Qi2YzeoE7X"
+        },
+        {
+            "Artists": [
+                "Slayer"
+            ],
+            "Genres": [
+                "trash-metal"
+            ],
+            "Href": "https://api.spotify.com/v1/albums/5g0QIKPHDAIVwiq03UeJpN",
+            "Id": "5g0QIKPHDAIVwiq03UeJpN",
+            "ImagesUrls": [
+                "https://i.scdn.co/image/ab67616d0000b2735340c85cf8c382368ee63292",
+                "https://i.scdn.co/image/ab67616d00001e025340c85cf8c382368ee63292",
+                "https://i.scdn.co/image/ab67616d000048515340c85cf8c382368ee63292"
+            ],
+            "Name": "Hell Awaits",
+            "ReleaseDate": "1985-06-19",
+            "Uri": "spotify:album:5g0QIKPHDAIVwiq03UeJpN"
+        },
+        {
+            "Artists": [
+                "Slayer"
+            ],
+            "Genres": [
+                "trash-metal"
+            ],
+            "Href": "https://api.spotify.com/v1/albums/2UqJjz5eMYRzbbKToD3Peh",
+            "Id": "2UqJjz5eMYRzbbKToD3Peh",
+            "ImagesUrls": [
+                "https://i.scdn.co/image/ab67616d0000b2736b5a07577377bb68b33e908c",
+                "https://i.scdn.co/image/ab67616d00001e026b5a07577377bb68b33e908c",
+                "https://i.scdn.co/image/ab67616d000048516b5a07577377bb68b33e908c"
+            ],
+            "Name": "South Of Heaven",
+            "ReleaseDate": "1988-01-01",
+            "Uri": "spotify:album:2UqJjz5eMYRzbbKToD3Peh"
+        },
+        {
+            "Artists": [
+                "Anthrax"
+            ],
+            "Genres": [
+                "trash-metal"
+            ],
+            "Href": "https://api.spotify.com/v1/albums/0qEFMrunmeRHqzI9xAnu9L",
+            "Id": "0qEFMrunmeRHqzI9xAnu9L",
+            "ImagesUrls": [
+                "https://i.scdn.co/image/ab67616d0000b2735b8c3c95fc82a1643ada6766",
+                "https://i.scdn.co/image/ab67616d00001e025b8c3c95fc82a1643ada6766",
+                "https://i.scdn.co/image/ab67616d000048515b8c3c95fc82a1643ada6766"
+            ],
+            "Name": "Spreading The Disease",
+            "ReleaseDate": "1985-10",
+            "Uri": "spotify:album:0qEFMrunmeRHqzI9xAnu9L"
+        },
+        {
+            "Artists": [
+                "Anthrax"
+            ],
+            "Genres": [
+                "trash-metal"
+            ],
+            "Href": "https://api.spotify.com/v1/albums/1xg9CNkTZ6zxN48GxyjANK",
+            "Id": "1xg9CNkTZ6zxN48GxyjANK",
+            "ImagesUrls": [
+                "https://i.scdn.co/image/ab67616d0000b27368379c48b0e551eff1749dad",
+                "https://i.scdn.co/image/ab67616d00001e0268379c48b0e551eff1749dad",
+                "https://i.scdn.co/image/ab67616d0000485168379c48b0e551eff1749dad"
+            ],
+            "Name": "Fistful of Metal",
+            "ReleaseDate": "1984",
+            "Uri": "spotify:album:1xg9CNkTZ6zxN48GxyjANK"
+        },
+        {
+            "Artists": [
+                "Anthrax"
+            ],
+            "Genres": [
+                "trash-metal"
+            ],
+            "Href": "https://api.spotify.com/v1/albums/3dy6mgYszZm3noUMEgWYGE",
+            "Id": "3dy6mgYszZm3noUMEgWYGE",
+            "ImagesUrls": [
+                "https://i.scdn.co/image/ab67616d0000b273608c1de2a4ba09416247c479",
+                "https://i.scdn.co/image/ab67616d00001e02608c1de2a4ba09416247c479",
+                "https://i.scdn.co/image/ab67616d00004851608c1de2a4ba09416247c479"
+            ],
+            "Name": "State Of Euphoria",
+            "ReleaseDate": "1988-01-01",
+            "Uri": "spotify:album:3dy6mgYszZm3noUMEgWYGE"
+        },
+        {
+            "Artists": [
+                "Anthrax"
+            ],
+            "Genres": [
+                "trash-metal"
+            ],
+            "Href": "https://api.spotify.com/v1/albums/4WZ1C5yYQ5mekCAw7zDPWA",
+            "Id": "4WZ1C5yYQ5mekCAw7zDPWA",
+            "ImagesUrls": [
+                "https://i.scdn.co/image/ab67616d0000b27347c265a8dd3ca4a2349f43ab",
+                "https://i.scdn.co/image/ab67616d00001e0247c265a8dd3ca4a2349f43ab",
+                "https://i.scdn.co/image/ab67616d0000485147c265a8dd3ca4a2349f43ab"
+            ],
+            "Name": "Persistence Of Time (30th Anniversary Remaster)",
+            "ReleaseDate": "1990-08-21",
+            "Uri": "spotify:album:4WZ1C5yYQ5mekCAw7zDPWA"
+        },
+        {
+            "Artists": [
+                "Dark Angel"
+            ],
+            "Genres": [
+                "trash-metal"
+            ],
+            "Href": "https://api.spotify.com/v1/albums/1IRzwwevpNSdxERoRIKQrw",
+            "Id": "1IRzwwevpNSdxERoRIKQrw",
+            "ImagesUrls": [
+                "https://i.scdn.co/image/ab67616d0000b2732ef05b39eaf74efbcf39a6e0",
+                "https://i.scdn.co/image/ab67616d00001e022ef05b39eaf74efbcf39a6e0",
+                "https://i.scdn.co/image/ab67616d000048512ef05b39eaf74efbcf39a6e0"
+            ],
+            "Name": "Darkness Descends",
+            "ReleaseDate": "1986",
+            "Uri": "spotify:album:1IRzwwevpNSdxERoRIKQrw"
+        },
+        {
+            "Artists": [
+                "Dark Angel"
+            ],
+            "Genres": [
+                "trash-metal"
+            ],
+            "Href": "https://api.spotify.com/v1/albums/1Wq9Ikuh6PpXgrUxEpPDHb",
+            "Id": "1Wq9Ikuh6PpXgrUxEpPDHb",
+            "ImagesUrls": [
+                "https://i.scdn.co/image/ab67616d0000b273cf6ab50001decc73f9a9422b",
+                "https://i.scdn.co/image/ab67616d00001e02cf6ab50001decc73f9a9422b",
+                "https://i.scdn.co/image/ab67616d00004851cf6ab50001decc73f9a9422b"
+            ],
+            "Name": "Time Does Not Heal",
+            "ReleaseDate": "1991",
+            "Uri": "spotify:album:1Wq9Ikuh6PpXgrUxEpPDHb"
+        },
+        {
+            "Artists": [
+                "Sodom"
+            ],
+            "Genres": [
+                "trash-metal"
+            ],
+            "Href": "https://api.spotify.com/v1/albums/7EJjTBLf2FlQ2riOODt9j9",
+            "Id": "7EJjTBLf2FlQ2riOODt9j9",
+            "ImagesUrls": [
+                "https://i.scdn.co/image/ab67616d0000b2739ad5ea30ba3c2b0092d33796",
+                "https://i.scdn.co/image/ab67616d00001e029ad5ea30ba3c2b0092d33796",
+                "https://i.scdn.co/image/ab67616d000048519ad5ea30ba3c2b0092d33796"
+            ],
+            "Name": "In the Sign of Evil / Obsessed by Cruelty",
+            "ReleaseDate": "1988-01-06",
+            "Uri": "spotify:album:7EJjTBLf2FlQ2riOODt9j9"
+        },
+        {
+            "Artists": [
+                "Sodom"
+            ],
+            "Genres": [
+                "trash-metal"
+            ],
+            "Href": "https://api.spotify.com/v1/albums/4riCXKyyPLZZTdWWd5ll9h",
+            "Id": "4riCXKyyPLZZTdWWd5ll9h",
+            "ImagesUrls": [
+                "https://i.scdn.co/image/ab67616d0000b273f26c51db839ab57b1c80d33e",
+                "https://i.scdn.co/image/ab67616d00001e02f26c51db839ab57b1c80d33e",
+                "https://i.scdn.co/image/ab67616d00004851f26c51db839ab57b1c80d33e"
+            ],
+            "Name": "Persecution Mania",
+            "ReleaseDate": "1987",
+            "Uri": "spotify:album:4riCXKyyPLZZTdWWd5ll9h"
+        },
+        {
+            "Artists": [
+                "Sodom"
+            ],
+            "Genres": [
+                "trash-metal"
+            ],
+            "Href": "https://api.spotify.com/v1/albums/6lg87gGVKeXKei65FnE8JN",
+            "Id": "6lg87gGVKeXKei65FnE8JN",
+            "ImagesUrls": [
+                "https://i.scdn.co/image/ab67616d0000b273b3f54f8fbba73365ab80099c",
+                "https://i.scdn.co/image/ab67616d00001e02b3f54f8fbba73365ab80099c",
+                "https://i.scdn.co/image/ab67616d00004851b3f54f8fbba73365ab80099c"
+            ],
+            "Name": "Agent Orange",
+            "ReleaseDate": "1989",
+            "Uri": "spotify:album:6lg87gGVKeXKei65FnE8JN"
+        },
+        {
+            "Artists": [
+                "Sodom"
+            ],
+            "Genres": [
+                "trash-metal"
+            ],
+            "Href": "https://api.spotify.com/v1/albums/325Tt4aYkDuoJzMO0kX14N",
+            "Id": "325Tt4aYkDuoJzMO0kX14N",
+            "ImagesUrls": [
+                "https://i.scdn.co/image/ab67616d0000b2735a77722d30090fb225adac0c",
+                "https://i.scdn.co/image/ab67616d00001e025a77722d30090fb225adac0c",
+                "https://i.scdn.co/image/ab67616d000048515a77722d30090fb225adac0c"
+            ],
+            "Name": "Tapping the Vein",
+            "ReleaseDate": "1992",
+            "Uri": "spotify:album:325Tt4aYkDuoJzMO0kX14N"
+        },
+        {
+            "Artists": [
+                "Sodom"
+            ],
+            "Genres": [
+                "trash-metal"
+            ],
+            "Href": "https://api.spotify.com/v1/albums/5O4dcEczjX8YfN0NyGYFQ0",
+            "Id": "5O4dcEczjX8YfN0NyGYFQ0",
+            "ImagesUrls": [
+                "https://i.scdn.co/image/ab67616d0000b273abae1aef7ed8a518e4456b41",
+                "https://i.scdn.co/image/ab67616d00001e02abae1aef7ed8a518e4456b41",
+                "https://i.scdn.co/image/ab67616d00004851abae1aef7ed8a518e4456b41"
+            ],
+            "Name": "Masquerade In Blood",
+            "ReleaseDate": "1995-06-01",
+            "Uri": "spotify:album:5O4dcEczjX8YfN0NyGYFQ0"
+        },
+        {
+            "Artists": [
+                "Sepultura"
+            ],
+            "Genres": [
+                "trash-metal"
+            ],
+            "Href": "https://api.spotify.com/v1/albums/3BDZvMYxZ6E8IuSQL2ew6Z",
+            "Id": "3BDZvMYxZ6E8IuSQL2ew6Z",
+            "ImagesUrls": [
+                "https://i.scdn.co/image/ab67616d0000b27317db2369086bf97cbe5e44b1",
+                "https://i.scdn.co/image/ab67616d00001e0217db2369086bf97cbe5e44b1",
+                "https://i.scdn.co/image/ab67616d0000485117db2369086bf97cbe5e44b1"
+            ],
+            "Name": "Beneath the Remains",
+            "ReleaseDate": "1989-04-07",
+            "Uri": "spotify:album:3BDZvMYxZ6E8IuSQL2ew6Z"
+        },
+        {
+            "Artists": [
+                "Sepultura"
+            ],
+            "Genres": [
+                "trash-metal"
+            ],
+            "Href": "https://api.spotify.com/v1/albums/7hgWmH16eu70yqrg5Pc3SM",
+            "Id": "7hgWmH16eu70yqrg5Pc3SM",
+            "ImagesUrls": [
+                "https://i.scdn.co/image/ab67616d0000b2736ee5427674e1b32a79f7567a",
+                "https://i.scdn.co/image/ab67616d00001e026ee5427674e1b32a79f7567a",
+                "https://i.scdn.co/image/ab67616d000048516ee5427674e1b32a79f7567a"
+            ],
+            "Name": "Arise",
+            "ReleaseDate": "1991-03-20",
+            "Uri": "spotify:album:7hgWmH16eu70yqrg5Pc3SM"
+        },
+        {
+            "Artists": [
+                "Voivod"
+            ],
+            "Genres": [
+                "trash-metal"
+            ],
+            "Href": "https://api.spotify.com/v1/albums/0SJfTElRVZqxKiG2MZBMCO",
+            "Id": "0SJfTElRVZqxKiG2MZBMCO",
+            "ImagesUrls": [
+                "https://i.scdn.co/image/ab67616d0000b2738d535edeb6558b37e480db3a",
+                "https://i.scdn.co/image/ab67616d00001e028d535edeb6558b37e480db3a",
+                "https://i.scdn.co/image/ab67616d000048518d535edeb6558b37e480db3a"
+            ],
+            "Name": "Killing Technology",
+            "ReleaseDate": "1987-04-03",
+            "Uri": "spotify:album:0SJfTElRVZqxKiG2MZBMCO"
+        },
+        {
+            "Artists": [
+                "Voivod"
+            ],
+            "Genres": [
+                "trash-metal"
+            ],
+            "Href": "https://api.spotify.com/v1/albums/6GWY2BAseXWPser0aVHUlp",
+            "Id": "6GWY2BAseXWPser0aVHUlp",
+            "ImagesUrls": [
+                "https://i.scdn.co/image/ab67616d0000b2738c15e6955167599bb30ae3cc",
+                "https://i.scdn.co/image/ab67616d00001e028c15e6955167599bb30ae3cc",
+                "https://i.scdn.co/image/ab67616d000048518c15e6955167599bb30ae3cc"
+            ],
+            "Name": "War and Pain",
+            "ReleaseDate": "1984",
+            "Uri": "spotify:album:6GWY2BAseXWPser0aVHUlp"
+        },
+        {
+            "Artists": [
+                "Destruction"
+            ],
+            "Genres": [
+                "trash-metal"
+            ],
+            "Href": "https://api.spotify.com/v1/albums/6Alq1l8ezrAFtEK0tCWnZC",
+            "Id": "6Alq1l8ezrAFtEK0tCWnZC",
+            "ImagesUrls": [
+                "https://i.scdn.co/image/ab67616d0000b273c12d239c0c28e090a2bd0109",
+                "https://i.scdn.co/image/ab67616d00001e02c12d239c0c28e090a2bd0109",
+                "https://i.scdn.co/image/ab67616d00004851c12d239c0c28e090a2bd0109"
+            ],
+            "Name": "Infernal Overkill",
+            "ReleaseDate": "1985",
+            "Uri": "spotify:album:6Alq1l8ezrAFtEK0tCWnZC"
+        },
+        {
+            "Artists": [
+                "Destruction"
+            ],
+            "Genres": [
+                "trash-metal"
+            ],
+            "Href": "https://api.spotify.com/v1/albums/612LAhcBHjCx8wiht8NPVx",
+            "Id": "612LAhcBHjCx8wiht8NPVx",
+            "ImagesUrls": [
+                "https://i.scdn.co/image/ab67616d0000b273478f2da5a746ea1a44f47306",
+                "https://i.scdn.co/image/ab67616d00001e02478f2da5a746ea1a44f47306",
+                "https://i.scdn.co/image/ab67616d00004851478f2da5a746ea1a44f47306"
+            ],
+            "Name": "Release From Agony",
+            "ReleaseDate": "1988",
+            "Uri": "spotify:album:612LAhcBHjCx8wiht8NPVx"
+        },
+        {
+            "Artists": [
+                "Death Angel"
+            ],
+            "Genres": [
+                "trash-metal"
+            ],
+            "Href": "https://api.spotify.com/v1/albums/35flmem6J4bq04Kvib1ghA",
+            "Id": "35flmem6J4bq04Kvib1ghA",
+            "ImagesUrls": [
+                "https://i.scdn.co/image/ab67616d0000b273ae8890246d91b2b3cb4511f4",
+                "https://i.scdn.co/image/ab67616d00001e02ae8890246d91b2b3cb4511f4",
+                "https://i.scdn.co/image/ab67616d00004851ae8890246d91b2b3cb4511f4"
+            ],
+            "Name": "The Ultra-Violence",
+            "ReleaseDate": "1987",
+            "Uri": "spotify:album:35flmem6J4bq04Kvib1ghA"
+        },
+        {
+            "Artists": [
+                "Annihilator"
+            ],
+            "Genres": [
+                "trash-metal"
+            ],
+            "Href": "https://api.spotify.com/v1/albums/5oKZacGOXxb7A2OwXgh9UY",
+            "Id": "5oKZacGOXxb7A2OwXgh9UY",
+            "ImagesUrls": [
+                "https://i.scdn.co/image/ab67616d0000b273505091cebd764c3a13590265",
+                "https://i.scdn.co/image/ab67616d00001e02505091cebd764c3a13590265",
+                "https://i.scdn.co/image/ab67616d00004851505091cebd764c3a13590265"
+            ],
+            "Name": "Alice In Hell",
+            "ReleaseDate": "1989",
+            "Uri": "spotify:album:5oKZacGOXxb7A2OwXgh9UY"
+        },
+        {
+            "Artists": [
+                "Overkill"
+            ],
+            "Genres": [
+                "trash-metal"
+            ],
+            "Href": "https://api.spotify.com/v1/albums/5cIvu6047CsrlgRcdwd2HQ",
+            "Id": "5cIvu6047CsrlgRcdwd2HQ",
+            "ImagesUrls": [
+                "https://i.scdn.co/image/ab67616d0000b273c2114d3ba605083392f8f878",
+                "https://i.scdn.co/image/ab67616d00001e02c2114d3ba605083392f8f878",
+                "https://i.scdn.co/image/ab67616d00004851c2114d3ba605083392f8f878"
+            ],
+            "Name": "The Years of Decay",
+            "ReleaseDate": "1989-10-10",
+            "Uri": "spotify:album:5cIvu6047CsrlgRcdwd2HQ"
+        },
+        {
+            "Artists": [
+                "Overkill"
+            ],
+            "Genres": [
+                "trash-metal"
+            ],
+            "Href": "https://api.spotify.com/v1/albums/5XuskaRVS1oPwxEdjEfYoz",
+            "Id": "5XuskaRVS1oPwxEdjEfYoz",
+            "ImagesUrls": [
+                "https://i.scdn.co/image/ab67616d0000b273d2c2a6439b94c4d0a48d4f48",
+                "https://i.scdn.co/image/ab67616d00001e02d2c2a6439b94c4d0a48d4f48",
+                "https://i.scdn.co/image/ab67616d00004851d2c2a6439b94c4d0a48d4f48"
+            ],
+            "Name": "The Grinding Wheel",
+            "ReleaseDate": "2017-02-10",
+            "Uri": "spotify:album:5XuskaRVS1oPwxEdjEfYoz"
+        },
+        {
+            "Artists": [
+                "Suicidal Tendencies"
+            ],
+            "Genres": [
+                "trash-metal"
+            ],
+            "Href": "https://api.spotify.com/v1/albums/6ZWj7yOC9Tstx1u55Qvcgq",
+            "Id": "6ZWj7yOC9Tstx1u55Qvcgq",
+            "ImagesUrls": [
+                "https://i.scdn.co/image/ab67616d0000b273314838998f0bb5bb88362f80",
+                "https://i.scdn.co/image/ab67616d00001e02314838998f0bb5bb88362f80",
+                "https://i.scdn.co/image/ab67616d00004851314838998f0bb5bb88362f80"
+            ],
+            "Name": "How Will I Laugh Tomorrow When I Can't Even Smile Today",
+            "ReleaseDate": "1988-01-01",
+            "Uri": "spotify:album:6ZWj7yOC9Tstx1u55Qvcgq"
+        },
+        {
+            "Artists": [
+                "Coroner"
+            ],
+            "Genres": [
+                "trash-metal"
+            ],
+            "Href": "https://api.spotify.com/v1/albums/6F98XoLiU6WsRNuyeiXg7d",
+            "Id": "6F98XoLiU6WsRNuyeiXg7d",
+            "ImagesUrls": [
+                "https://i.scdn.co/image/ab67616d0000b273a2a4db178754f11624c4b335",
+                "https://i.scdn.co/image/ab67616d00001e02a2a4db178754f11624c4b335",
+                "https://i.scdn.co/image/ab67616d00004851a2a4db178754f11624c4b335"
+            ],
+            "Name": "R.I.P.",
+            "ReleaseDate": "1987-06-01",
+            "Uri": "spotify:album:6F98XoLiU6WsRNuyeiXg7d"
+        },
+        {
+            "Artists": [
+                "Coroner"
+            ],
+            "Genres": [
+                "trash-metal"
+            ],
+            "Href": "https://api.spotify.com/v1/albums/2o6XqegTow2rfyKM9UglBX",
+            "Id": "2o6XqegTow2rfyKM9UglBX",
+            "ImagesUrls": [
+                "https://i.scdn.co/image/ab67616d0000b273b7e218addc2cc0232e3a0bc6",
+                "https://i.scdn.co/image/ab67616d00001e02b7e218addc2cc0232e3a0bc6",
+                "https://i.scdn.co/image/ab67616d00004851b7e218addc2cc0232e3a0bc6"
+            ],
+            "Name": "Punishment for Decadence",
+            "ReleaseDate": "1988-08-01",
+            "Uri": "spotify:album:2o6XqegTow2rfyKM9UglBX"
+        },
+        {
+            "Artists": [
+                "Coroner"
+            ],
+            "Genres": [
+                "trash-metal"
+            ],
+            "Href": "https://api.spotify.com/v1/albums/34rhpcyllj7zO9ozE5Cf2M",
+            "Id": "34rhpcyllj7zO9ozE5Cf2M",
+            "ImagesUrls": [
+                "https://i.scdn.co/image/ab67616d0000b273c98eff11fbf180cb7c121955",
+                "https://i.scdn.co/image/ab67616d00001e02c98eff11fbf180cb7c121955",
+                "https://i.scdn.co/image/ab67616d00004851c98eff11fbf180cb7c121955"
+            ],
+            "Name": "No More Color",
+            "ReleaseDate": "1989-09-18",
+            "Uri": "spotify:album:34rhpcyllj7zO9ozE5Cf2M"
+        },
+        {
+            "Artists": [
+                "Coroner"
+            ],
+            "Genres": [
+                "trash-metal"
+            ],
+            "Href": "https://api.spotify.com/v1/albums/0qbld4MsN4rUa4uyEm1juQ",
+            "Id": "0qbld4MsN4rUa4uyEm1juQ",
+            "ImagesUrls": [
+                "https://i.scdn.co/image/ab67616d0000b27397c8fc16d2dc1410cfa71bcf",
+                "https://i.scdn.co/image/ab67616d00001e0297c8fc16d2dc1410cfa71bcf",
+                "https://i.scdn.co/image/ab67616d0000485197c8fc16d2dc1410cfa71bcf"
+            ],
+            "Name": "Mental Vortex",
+            "ReleaseDate": "1991-08-12",
+            "Uri": "spotify:album:0qbld4MsN4rUa4uyEm1juQ"
+        },
+        {
+            "Artists": [
+                "Nuclear Assault"
+            ],
+            "Genres": [
+                "trash-metal"
+            ],
+            "Href": "https://api.spotify.com/v1/albums/79vmBrXaUaPS7LleUgP7HY",
+            "Id": "79vmBrXaUaPS7LleUgP7HY",
+            "ImagesUrls": [
+                "https://i.scdn.co/image/ab67616d0000b273124767f618f8b76ab030388c",
+                "https://i.scdn.co/image/ab67616d00001e02124767f618f8b76ab030388c",
+                "https://i.scdn.co/image/ab67616d00004851124767f618f8b76ab030388c"
+            ],
+            "Name": "Handle With Care",
+            "ReleaseDate": "1989",
+            "Uri": "spotify:album:79vmBrXaUaPS7LleUgP7HY"
+        },
+        {
+            "Artists": [
+                "Nuclear Assault"
+            ],
+            "Genres": [
+                "trash-metal"
+            ],
+            "Href": "https://api.spotify.com/v1/albums/0isrNd8l4UqHhtPDhCKsId",
+            "Id": "0isrNd8l4UqHhtPDhCKsId",
+            "ImagesUrls": [
+                "https://i.scdn.co/image/ab67616d0000b273f0a41e9f16f13beff91dffc4",
+                "https://i.scdn.co/image/ab67616d00001e02f0a41e9f16f13beff91dffc4",
+                "https://i.scdn.co/image/ab67616d00004851f0a41e9f16f13beff91dffc4"
+            ],
+            "Name": "Game Over",
+            "ReleaseDate": "1986",
+            "Uri": "spotify:album:0isrNd8l4UqHhtPDhCKsId"
+        },
+        {
+            "Artists": [
+                "Venom"
+            ],
+            "Genres": [
+                "trash-metal"
+            ],
+            "Href": "https://api.spotify.com/v1/albums/5oxowPycWCoLyE5nf0ZGmX",
+            "Id": "5oxowPycWCoLyE5nf0ZGmX",
+            "ImagesUrls": [
+                "https://i.scdn.co/image/ab67616d0000b2737fe89832ca4d35b06fb36c26",
+                "https://i.scdn.co/image/ab67616d00001e027fe89832ca4d35b06fb36c26",
+                "https://i.scdn.co/image/ab67616d000048517fe89832ca4d35b06fb36c26"
+            ],
+            "Name": "Welcome to Hell",
+            "ReleaseDate": "1981-01-01",
+            "Uri": "spotify:album:5oxowPycWCoLyE5nf0ZGmX"
+        },
+        {
+            "Artists": [
+                "Venom"
+            ],
+            "Genres": [
+                "trash-metal"
+            ],
+            "Href": "https://api.spotify.com/v1/albums/1e6Osda6t8UDFYQ29sFVlV",
+            "Id": "1e6Osda6t8UDFYQ29sFVlV",
+            "ImagesUrls": [
+                "https://i.scdn.co/image/ab67616d0000b27361383fe42756b74fb81ed769",
+                "https://i.scdn.co/image/ab67616d00001e0261383fe42756b74fb81ed769",
+                "https://i.scdn.co/image/ab67616d0000485161383fe42756b74fb81ed769"
+            ],
+            "Name": "Black Metal",
+            "ReleaseDate": "1982-11-01",
+            "Uri": "spotify:album:1e6Osda6t8UDFYQ29sFVlV"
+        },
+        {
+            "Artists": [
+                "Mercyful Fate"
+            ],
+            "Genres": [
+                "trash-metal"
+            ],
+            "Href": "https://api.spotify.com/v1/albums/2csZMxSEbMiDhiaZuEeuuv",
+            "Id": "2csZMxSEbMiDhiaZuEeuuv",
+            "ImagesUrls": [
+                "https://i.scdn.co/image/ab67616d0000b273bed3cf6d90e79aa317f69705",
+                "https://i.scdn.co/image/ab67616d00001e02bed3cf6d90e79aa317f69705",
+                "https://i.scdn.co/image/ab67616d00004851bed3cf6d90e79aa317f69705"
+            ],
+            "Name": "Melissa",
+            "ReleaseDate": "1983-10-30",
+            "Uri": "spotify:album:2csZMxSEbMiDhiaZuEeuuv"
+        },
+        {
+            "Artists": [
+                "Exhorder"
+            ],
+            "Genres": [
+                "trash-metal"
+            ],
+            "Href": "https://api.spotify.com/v1/albums/5YnKblRYZeLlm90M9xAIvT",
+            "Id": "5YnKblRYZeLlm90M9xAIvT",
+            "ImagesUrls": [
+                "https://i.scdn.co/image/ab67616d0000b2733b22c995f6edf59dcdb46594",
+                "https://i.scdn.co/image/ab67616d00001e023b22c995f6edf59dcdb46594",
+                "https://i.scdn.co/image/ab67616d000048513b22c995f6edf59dcdb46594"
+            ],
+            "Name": "Slaughter In The Vatican",
+            "ReleaseDate": "1990-10-23",
+            "Uri": "spotify:album:5YnKblRYZeLlm90M9xAIvT"
+        },
+        {
+            "Artists": [
+                "S.O.D. Stormtroopers of Death"
+            ],
+            "Genres": [
+                "trash-metal"
+            ],
+            "Href": "https://api.spotify.com/v1/albums/6XXzwrJe4srxBa8JHNgu1J",
+            "Id": "6XXzwrJe4srxBa8JHNgu1J",
+            "ImagesUrls": [
+                "https://i.scdn.co/image/ab67616d0000b2730d71a5fef5af330df458bcb4",
+                "https://i.scdn.co/image/ab67616d00001e020d71a5fef5af330df458bcb4",
+                "https://i.scdn.co/image/ab67616d000048510d71a5fef5af330df458bcb4"
+            ],
+            "Name": "Speak English or Die (30th Anniversary Edition)",
+            "ReleaseDate": "2015-11-27",
+            "Uri": "spotify:album:6XXzwrJe4srxBa8JHNgu1J"
+        },
+        {
+            "Artists": [
+                "Agnostic Front"
+            ],
+            "Genres": [
+                "trash-metal"
+            ],
+            "Href": "https://api.spotify.com/v1/albums/2IpcwcLeL0keQp5TLGE2yT",
+            "Id": "2IpcwcLeL0keQp5TLGE2yT",
+            "ImagesUrls": [
+                "https://i.scdn.co/image/ab67616d0000b2734cb86870ba4e0626ea07e3ae",
+                "https://i.scdn.co/image/ab67616d00001e024cb86870ba4e0626ea07e3ae",
+                "https://i.scdn.co/image/ab67616d000048514cb86870ba4e0626ea07e3ae"
+            ],
+            "Name": "Cause for Alarm",
+            "ReleaseDate": "1986",
+            "Uri": "spotify:album:2IpcwcLeL0keQp5TLGE2yT"
+        },
+        {
+            "Artists": [
+                "Flotsam & Jetsam"
+            ],
+            "Genres": [
+                "trash-metal"
+            ],
+            "Href": "https://api.spotify.com/v1/albums/1lXN7Nj1wGSQiPfGjCZHhf",
+            "Id": "1lXN7Nj1wGSQiPfGjCZHhf",
+            "ImagesUrls": [
+                "https://i.scdn.co/image/ab67616d0000b27387f90177d4152a09eee584a7",
+                "https://i.scdn.co/image/ab67616d00001e0287f90177d4152a09eee584a7",
+                "https://i.scdn.co/image/ab67616d0000485187f90177d4152a09eee584a7"
+            ],
+            "Name": "Doomsday for the Deceiver",
+            "ReleaseDate": "1986",
+            "Uri": "spotify:album:1lXN7Nj1wGSQiPfGjCZHhf"
+        },
+        {
+            "Artists": [
+                "Flotsam & Jetsam"
+            ],
+            "Genres": [
+                "trash-metal"
+            ],
+            "Href": "https://api.spotify.com/v1/albums/7fsIG3WcnfbMs1Zv5yDvI9",
+            "Id": "7fsIG3WcnfbMs1Zv5yDvI9",
+            "ImagesUrls": [
+                "https://i.scdn.co/image/ab67616d0000b273ccd4ac479630110eb67718cf",
+                "https://i.scdn.co/image/ab67616d00001e02ccd4ac479630110eb67718cf",
+                "https://i.scdn.co/image/ab67616d00004851ccd4ac479630110eb67718cf"
+            ],
+            "Name": "Doomsday for the Deceiver (20th Anniversary Special Edition)",
+            "ReleaseDate": "2006",
+            "Uri": "spotify:album:7fsIG3WcnfbMs1Zv5yDvI9"
+        },
+        {
+            "Artists": [
+                "Municipal Waste"
+            ],
+            "Genres": [
+                "trash-metal"
+            ],
+            "Href": "https://api.spotify.com/v1/albums/7cU3FZ3u2jgKd5s8hhKJ9h",
+            "Id": "7cU3FZ3u2jgKd5s8hhKJ9h",
+            "ImagesUrls": [
+                "https://i.scdn.co/image/ab67616d0000b273760a0ad8dce3c88c9907352a",
+                "https://i.scdn.co/image/ab67616d00001e02760a0ad8dce3c88c9907352a",
+                "https://i.scdn.co/image/ab67616d00004851760a0ad8dce3c88c9907352a"
+            ],
+            "Name": "The Art of Partying",
+            "ReleaseDate": "2007",
+            "Uri": "spotify:album:7cU3FZ3u2jgKd5s8hhKJ9h"
+        },
+        {
+            "Artists": [
+                "Municipal Waste"
+            ],
+            "Genres": [
+                "trash-metal"
+            ],
+            "Href": "https://api.spotify.com/v1/albums/3bGeOJCS0SxkeQTBlAdfps",
+            "Id": "3bGeOJCS0SxkeQTBlAdfps",
+            "ImagesUrls": [
+                "https://i.scdn.co/image/ab67616d0000b27325b43fa2aed30bbf32d5f4f5",
+                "https://i.scdn.co/image/ab67616d00001e0225b43fa2aed30bbf32d5f4f5",
+                "https://i.scdn.co/image/ab67616d0000485125b43fa2aed30bbf32d5f4f5"
+            ],
+            "Name": "The Fatal Feast",
+            "ReleaseDate": "2012-04-13",
+            "Uri": "spotify:album:3bGeOJCS0SxkeQTBlAdfps"
+        },
+        {
+            "Artists": [
+                "Metal Church"
+            ],
+            "Genres": [
+                "trash-metal"
+            ],
+            "Href": "https://api.spotify.com/v1/albums/6LYQlKhDAXE9xMS3YzioNv",
+            "Id": "6LYQlKhDAXE9xMS3YzioNv",
+            "ImagesUrls": [
+                "https://i.scdn.co/image/ab67616d0000b273946386c124aefa1e49b24442",
+                "https://i.scdn.co/image/ab67616d00001e02946386c124aefa1e49b24442",
+                "https://i.scdn.co/image/ab67616d00004851946386c124aefa1e49b24442"
+            ],
+            "Name": "Metal Church",
+            "ReleaseDate": "1984",
+            "Uri": "spotify:album:6LYQlKhDAXE9xMS3YzioNv"
+        },
+        {
+            "Artists": [
+                "Razor"
+            ],
+            "Genres": [
+                "trash-metal"
+            ],
+            "Href": "https://api.spotify.com/v1/albums/35FT608MafK28IvnHv2xsN",
+            "Id": "35FT608MafK28IvnHv2xsN",
+            "ImagesUrls": [
+                "https://i.scdn.co/image/ab67616d0000b27395f534ff874d5a405d050cb4",
+                "https://i.scdn.co/image/ab67616d00001e0295f534ff874d5a405d050cb4",
+                "https://i.scdn.co/image/ab67616d0000485195f534ff874d5a405d050cb4"
+            ],
+            "Name": "Violent Restitution (Deluxe Reissue)",
+            "ReleaseDate": "2015-05-05",
+            "Uri": "spotify:album:35FT608MafK28IvnHv2xsN"
+        },
+        {
+            "Artists": [
+                "Sabbat"
+            ],
+            "Genres": [
+                "trash-metal"
+            ],
+            "Href": "https://api.spotify.com/v1/albums/0Bbj6ao9xoNtGw6Yttqklr",
+            "Id": "0Bbj6ao9xoNtGw6Yttqklr",
+            "ImagesUrls": [
+                "https://i.scdn.co/image/ab67616d0000b273f1c420a7636c3c1b2f6b5a4a",
+                "https://i.scdn.co/image/ab67616d00001e02f1c420a7636c3c1b2f6b5a4a",
+                "https://i.scdn.co/image/ab67616d00004851f1c420a7636c3c1b2f6b5a4a"
+            ],
+            "Name": "Dreamweaver (Expanded Edition)",
+            "ReleaseDate": "1989-05-15",
+            "Uri": "spotify:album:0Bbj6ao9xoNtGw6Yttqklr"
+        },
+        {
+            "Artists": [
+                "Power Trip"
+            ],
+            "Genres": [
+                "trash-metal"
+            ],
+            "Href": "https://api.spotify.com/v1/albums/3suNG9n4WGYQabXhUTkQ70",
+            "Id": "3suNG9n4WGYQabXhUTkQ70",
+            "ImagesUrls": [
+                "https://i.scdn.co/image/ab67616d0000b273fbe6b24ddc7dc5075cbab217",
+                "https://i.scdn.co/image/ab67616d00001e02fbe6b24ddc7dc5075cbab217",
+                "https://i.scdn.co/image/ab67616d00004851fbe6b24ddc7dc5075cbab217"
+            ],
+            "Name": "Nightmare Logic",
+            "ReleaseDate": "2017-02-24",
+            "Uri": "spotify:album:3suNG9n4WGYQabXhUTkQ70"
+        },
+        {
+            "Artists": [
+                "Cryptic Slaughter"
+            ],
+            "Genres": [
+                "trash-metal"
+            ],
+            "Href": "https://api.spotify.com/v1/albums/6FHJNTdSOEplsQ5kQtJ9AQ",
+            "Id": "6FHJNTdSOEplsQ5kQtJ9AQ",
+            "ImagesUrls": [
+                "https://i.scdn.co/image/ab67616d0000b2737cb4672caa873a1adc55242f",
+                "https://i.scdn.co/image/ab67616d00001e027cb4672caa873a1adc55242f",
+                "https://i.scdn.co/image/ab67616d000048517cb4672caa873a1adc55242f"
+            ],
+            "Name": "Money Talks",
+            "ReleaseDate": "1987",
+            "Uri": "spotify:album:6FHJNTdSOEplsQ5kQtJ9AQ"
+        },
+        {
+            "Artists": [
+                "Sacred Reich"
+            ],
+            "Genres": [
+                "trash-metal"
+            ],
+            "Href": "https://api.spotify.com/v1/albums/7ziBz3FoYAlj0uDgvc9lNX",
+            "Id": "7ziBz3FoYAlj0uDgvc9lNX",
+            "ImagesUrls": [
+                "https://i.scdn.co/image/ab67616d0000b2733bd0ce64c28fb926f62bee6c",
+                "https://i.scdn.co/image/ab67616d00001e023bd0ce64c28fb926f62bee6c",
+                "https://i.scdn.co/image/ab67616d000048513bd0ce64c28fb926f62bee6c"
+            ],
+            "Name": "Ignorance",
+            "ReleaseDate": "1987-10-13",
+            "Uri": "spotify:album:7ziBz3FoYAlj0uDgvc9lNX"
+        },
+        {
+            "Artists": [
+                "Whiplash"
+            ],
+            "Genres": [
+                "trash-metal"
+            ],
+            "Href": "https://api.spotify.com/v1/albums/4IuN7fuupu8BCp1Y1CHW7H",
+            "Id": "4IuN7fuupu8BCp1Y1CHW7H",
+            "ImagesUrls": [
+                "https://i.scdn.co/image/ab67616d0000b2730785e89c6a8cd724404e7888",
+                "https://i.scdn.co/image/ab67616d00001e020785e89c6a8cd724404e7888",
+                "https://i.scdn.co/image/ab67616d000048510785e89c6a8cd724404e7888"
+            ],
+            "Name": "Ticket To Mayhem",
+            "ReleaseDate": "1987-01-01",
+            "Uri": "spotify:album:4IuN7fuupu8BCp1Y1CHW7H"
+        },
+        {
+            "Artists": [
+                "Whiplash"
+            ],
+            "Genres": [
+                "trash-metal"
+            ],
+            "Href": "https://api.spotify.com/v1/albums/3yMXMihmwUHEXHc8K3Q2Kq",
+            "Id": "3yMXMihmwUHEXHc8K3Q2Kq",
+            "ImagesUrls": [
+                "https://i.scdn.co/image/ab67616d0000b273a339d4d42535c2ea4d34a863",
+                "https://i.scdn.co/image/ab67616d00001e02a339d4d42535c2ea4d34a863",
+                "https://i.scdn.co/image/ab67616d00004851a339d4d42535c2ea4d34a863"
+            ],
+            "Name": "Power And Pain",
+            "ReleaseDate": "1985-01-01",
+            "Uri": "spotify:album:3yMXMihmwUHEXHc8K3Q2Kq"
+        },
+        {
+            "Artists": [
+                "Vio-Lence"
+            ],
+            "Genres": [
+                "trash-metal"
+            ],
+            "Href": "https://api.spotify.com/v1/albums/5ic4HBPEewDrDTWQ2I8oHc",
+            "Id": "5ic4HBPEewDrDTWQ2I8oHc",
+            "ImagesUrls": [
+                "https://i.scdn.co/image/ab67616d0000b273e9e2132cea8528484fa58bfc",
+                "https://i.scdn.co/image/ab67616d00001e02e9e2132cea8528484fa58bfc",
+                "https://i.scdn.co/image/ab67616d00004851e9e2132cea8528484fa58bfc"
+            ],
+            "Name": "Eternal Nightmare",
+            "ReleaseDate": "2014-06-23",
+            "Uri": "spotify:album:5ic4HBPEewDrDTWQ2I8oHc"
+        },
+        {
+            "Artists": [
+                "Havok"
+            ],
+            "Genres": [
+                "trash-metal"
+            ],
+            "Href": "https://api.spotify.com/v1/albums/7275posUjEJ7H9tLyaxyLH",
+            "Id": "7275posUjEJ7H9tLyaxyLH",
+            "ImagesUrls": [
+                "https://i.scdn.co/image/ab67616d0000b2739c910b2c3a453609971589ac",
+                "https://i.scdn.co/image/ab67616d00001e029c910b2c3a453609971589ac",
+                "https://i.scdn.co/image/ab67616d000048519c910b2c3a453609971589ac"
+            ],
+            "Name": "Time Is Up",
+            "ReleaseDate": "2011-03-29",
+            "Uri": "spotify:album:7275posUjEJ7H9tLyaxyLH"
+        },
+        {
+            "Artists": [
+                "Tankard"
+            ],
+            "Genres": [
+                "trash-metal"
+            ],
+            "Href": "https://api.spotify.com/v1/albums/3ktE9GuBmljhH1vSNlzxuu",
+            "Id": "3ktE9GuBmljhH1vSNlzxuu",
+            "ImagesUrls": [
+                "https://i.scdn.co/image/ab67616d0000b2739fa6fc5edd740ac79922c348",
+                "https://i.scdn.co/image/ab67616d00001e029fa6fc5edd740ac79922c348",
+                "https://i.scdn.co/image/ab67616d000048519fa6fc5edd740ac79922c348"
+            ],
+            "Name": "Chemical Invasion (2017 - Remaster)",
+            "ReleaseDate": "1987-10-01",
+            "Uri": "spotify:album:3ktE9GuBmljhH1vSNlzxuu"
+        },
+        {
+            "Artists": [
+                "Tankard"
+            ],
+            "Genres": [
+                "trash-metal"
+            ],
+            "Href": "https://api.spotify.com/v1/albums/1ihIYoDXLajG0gfUSOq4pC",
+            "Id": "1ihIYoDXLajG0gfUSOq4pC",
+            "ImagesUrls": [
+                "https://i.scdn.co/image/ab67616d0000b27379f3815c1eb1dd1f761d7e44",
+                "https://i.scdn.co/image/ab67616d00001e0279f3815c1eb1dd1f761d7e44",
+                "https://i.scdn.co/image/ab67616d0000485179f3815c1eb1dd1f761d7e44"
+            ],
+            "Name": "Zombie Attack (2017 Remaster)",
+            "ReleaseDate": "1986-07-01",
+            "Uri": "spotify:album:1ihIYoDXLajG0gfUSOq4pC"
+        },
+        {
+            "Artists": [
+                "Iced Earth"
+            ],
+            "Genres": [
+                "trash-metal"
+            ],
+            "Href": "https://api.spotify.com/v1/albums/6af2290qvtN9q6fZgGucdZ",
+            "Id": "6af2290qvtN9q6fZgGucdZ",
+            "ImagesUrls": [
+                "https://i.scdn.co/image/ab67616d0000b273376cc6a2d3648a721a84b7a6",
+                "https://i.scdn.co/image/ab67616d00001e02376cc6a2d3648a721a84b7a6",
+                "https://i.scdn.co/image/ab67616d00004851376cc6a2d3648a721a84b7a6"
+            ],
+            "Name": "Night Of The Stormrider",
+            "ReleaseDate": "1991-06-03",
+            "Uri": "spotify:album:6af2290qvtN9q6fZgGucdZ"
+        },
+        {
+            "Artists": [
+                "Onslaught"
+            ],
+            "Genres": [
+                "trash-metal"
+            ],
+            "Href": "https://api.spotify.com/v1/albums/5HF361yRizBaO5yE3OkBh6",
+            "Id": "5HF361yRizBaO5yE3OkBh6",
+            "ImagesUrls": [
+                "https://i.scdn.co/image/ab67616d0000b273034d48057ef911655117f8ce",
+                "https://i.scdn.co/image/ab67616d00001e02034d48057ef911655117f8ce",
+                "https://i.scdn.co/image/ab67616d00004851034d48057ef911655117f8ce"
+            ],
+            "Name": "Power from Hell",
+            "ReleaseDate": "1985-02-04",
+            "Uri": "spotify:album:5HF361yRizBaO5yE3OkBh6"
+        },
+        {
+            "Artists": [
+                "Sadus"
+            ],
+            "Genres": [
+                "trash-metal"
+            ],
+            "Href": "https://api.spotify.com/v1/albums/7pWX1741ZblBq93ZAEPLQT",
+            "Id": "7pWX1741ZblBq93ZAEPLQT",
+            "ImagesUrls": [
+                "https://i.scdn.co/image/ab67616d0000b273f43a6c1235f703bb32db9d4c",
+                "https://i.scdn.co/image/ab67616d00001e02f43a6c1235f703bb32db9d4c",
+                "https://i.scdn.co/image/ab67616d00004851f43a6c1235f703bb32db9d4c"
+            ],
+            "Name": "Chemical Exposure",
+            "ReleaseDate": "1988-06-15",
+            "Uri": "spotify:album:7pWX1741ZblBq93ZAEPLQT"
+        },
+        {
+            "Artists": [
+                "Forbidden"
+            ],
+            "Genres": [
+                "trash-metal"
+            ],
+            "Href": "https://api.spotify.com/v1/albums/5yjZpCAc80twY03yRI0hce",
+            "Id": "5yjZpCAc80twY03yRI0hce",
+            "ImagesUrls": [
+                "https://i.scdn.co/image/ab67616d0000b273bde35d04ce69a538536a586a",
+                "https://i.scdn.co/image/ab67616d00001e02bde35d04ce69a538536a586a",
+                "https://i.scdn.co/image/ab67616d00004851bde35d04ce69a538536a586a"
+            ],
+            "Name": "Forbidden Evil",
+            "ReleaseDate": "1988",
+            "Uri": "spotify:album:5yjZpCAc80twY03yRI0hce"
+        },
+        {
+            "Artists": [
+                "Forbidden"
+            ],
+            "Genres": [
+                "trash-metal"
+            ],
+            "Href": "https://api.spotify.com/v1/albums/06cQQ47KHUZf6bAuflpbb0",
+            "Id": "06cQQ47KHUZf6bAuflpbb0",
+            "ImagesUrls": [
+                "https://i.scdn.co/image/ab67616d0000b273db325618f7c002fbc2d35e01",
+                "https://i.scdn.co/image/ab67616d00001e02db325618f7c002fbc2d35e01",
+                "https://i.scdn.co/image/ab67616d00004851db325618f7c002fbc2d35e01"
+            ],
+            "Name": "Twisted Into Form",
+            "ReleaseDate": "1990",
+            "Uri": "spotify:album:06cQQ47KHUZf6bAuflpbb0"
+        },
+        {
+            "Artists": [
+                "Artillery"
+            ],
+            "Genres": [
+                "trash-metal"
+            ],
+            "Href": "https://api.spotify.com/v1/albums/7dK2VJV40hNCYkNSrQx6Vq",
+            "Id": "7dK2VJV40hNCYkNSrQx6Vq",
+            "ImagesUrls": [
+                "https://i.scdn.co/image/ab67616d0000b27309223846dcf37471c27b842b",
+                "https://i.scdn.co/image/ab67616d00001e0209223846dcf37471c27b842b",
+                "https://i.scdn.co/image/ab67616d0000485109223846dcf37471c27b842b"
+            ],
+            "Name": "Fear of Tomorrow",
+            "ReleaseDate": "1985-08-09",
+            "Uri": "spotify:album:7dK2VJV40hNCYkNSrQx6Vq"
+        },
+        {
+            "Artists": [
+                "Artillery"
+            ],
+            "Genres": [
+                "trash-metal"
+            ],
+            "Href": "https://api.spotify.com/v1/albums/5FYyro0Iockho1CpMAs7Qu",
+            "Id": "5FYyro0Iockho1CpMAs7Qu",
+            "ImagesUrls": [
+                "https://i.scdn.co/image/ab67616d0000b2732e40c6e0a51a450b87fe66eb",
+                "https://i.scdn.co/image/ab67616d00001e022e40c6e0a51a450b87fe66eb",
+                "https://i.scdn.co/image/ab67616d000048512e40c6e0a51a450b87fe66eb"
+            ],
+            "Name": "Terror Squad",
+            "ReleaseDate": "1987-04-24",
+            "Uri": "spotify:album:5FYyro0Iockho1CpMAs7Qu"
+        },
+        {
+            "Artists": [
+                "Artillery"
+            ],
+            "Genres": [
+                "trash-metal"
+            ],
+            "Href": "https://api.spotify.com/v1/albums/4Hl54vmZlwVNaitjOzg0r4",
+            "Id": "4Hl54vmZlwVNaitjOzg0r4",
+            "ImagesUrls": [
+                "https://i.scdn.co/image/ab67616d0000b273c7d36eae275e3228d135e12c",
+                "https://i.scdn.co/image/ab67616d00001e02c7d36eae275e3228d135e12c",
+                "https://i.scdn.co/image/ab67616d00004851c7d36eae275e3228d135e12c"
+            ],
+            "Name": "Deadly Relics",
+            "ReleaseDate": "2019-12-06",
+            "Uri": "spotify:album:4Hl54vmZlwVNaitjOzg0r4"
+        },
+        {
+            "Artists": [
+                "Heathen"
+            ],
+            "Genres": [
+                "trash-metal"
+            ],
+            "Href": "https://api.spotify.com/v1/albums/0Jh0WGvvSDbsZCgfK9M9Jm",
+            "Id": "0Jh0WGvvSDbsZCgfK9M9Jm",
+            "ImagesUrls": [
+                "https://i.scdn.co/image/ab67616d0000b273551d335598528ef25f9eebd8",
+                "https://i.scdn.co/image/ab67616d00001e02551d335598528ef25f9eebd8",
+                "https://i.scdn.co/image/ab67616d00004851551d335598528ef25f9eebd8"
+            ],
+            "Name": "Breaking the Silence",
+            "ReleaseDate": "1987",
+            "Uri": "spotify:album:0Jh0WGvvSDbsZCgfK9M9Jm"
+        },
+        {
+            "Artists": [
+                "Heathen"
+            ],
+            "Genres": [
+                "trash-metal"
+            ],
+            "Href": "https://api.spotify.com/v1/albums/7rgm2haPSrRA2jQM4c0gMj",
+            "Id": "7rgm2haPSrRA2jQM4c0gMj",
+            "ImagesUrls": [
+                "https://i.scdn.co/image/ab67616d0000b273cf25f62d62a92176dd02892b",
+                "https://i.scdn.co/image/ab67616d00001e02cf25f62d62a92176dd02892b",
+                "https://i.scdn.co/image/ab67616d00004851cf25f62d62a92176dd02892b"
+            ],
+            "Name": "Victims Of Deception",
+            "ReleaseDate": "1991-03-26",
+            "Uri": "spotify:album:7rgm2haPSrRA2jQM4c0gMj"
+        },
+        {
+            "Artists": [
+                "Evile"
+            ],
+            "Genres": [
+                "trash-metal"
+            ],
+            "Href": "https://api.spotify.com/v1/albums/3G3vlh9dfQMTcgcDhNkgut",
+            "Id": "3G3vlh9dfQMTcgcDhNkgut",
+            "ImagesUrls": [
+                "https://i.scdn.co/image/ab67616d0000b2734ffd5dfa9cbf1d04d1c46527",
+                "https://i.scdn.co/image/ab67616d00001e024ffd5dfa9cbf1d04d1c46527",
+                "https://i.scdn.co/image/ab67616d000048514ffd5dfa9cbf1d04d1c46527"
+            ],
+            "Name": "Enter The Grave",
+            "ReleaseDate": "2007",
+            "Uri": "spotify:album:3G3vlh9dfQMTcgcDhNkgut"
+        },
+        {
+            "Artists": [
+                "Toxic Holocaust"
+            ],
+            "Genres": [
+                "trash-metal"
+            ],
+            "Href": "https://api.spotify.com/v1/albums/5UfQpdGMJJ4dfhk7BnHiEU",
+            "Id": "5UfQpdGMJJ4dfhk7BnHiEU",
+            "ImagesUrls": [
+                "https://i.scdn.co/image/ab67616d0000b27354fdea82eb7d03a6fccee084",
+                "https://i.scdn.co/image/ab67616d00001e0254fdea82eb7d03a6fccee084",
+                "https://i.scdn.co/image/ab67616d0000485154fdea82eb7d03a6fccee084"
+            ],
+            "Name": "An Overdose of Death...",
+            "ReleaseDate": "2008-09-02",
+            "Uri": "spotify:album:5UfQpdGMJJ4dfhk7BnHiEU"
+        },
+        {
+            "Artists": [
+                "Hirax"
+            ],
+            "Genres": [
+                "trash-metal"
+            ],
+            "Href": "https://api.spotify.com/v1/albums/6b01iIEWOLj2mED8zYLIl2",
+            "Id": "6b01iIEWOLj2mED8zYLIl2",
+            "ImagesUrls": [
+                "https://i.scdn.co/image/ab67616d0000b27317aec390f88af2c90ac1b86c",
+                "https://i.scdn.co/image/ab67616d00001e0217aec390f88af2c90ac1b86c",
+                "https://i.scdn.co/image/ab67616d0000485117aec390f88af2c90ac1b86c"
+            ],
+            "Name": "Not Dead Yet",
+            "ReleaseDate": "1987",
+            "Uri": "spotify:album:6b01iIEWOLj2mED8zYLIl2"
+        },
+        {
+            "Artists": [
+                "Exumer"
+            ],
+            "Genres": [
+                "trash-metal"
+            ],
+            "Href": "https://api.spotify.com/v1/albums/5C8Mjwwruh2IFfg4WbdnlR",
+            "Id": "5C8Mjwwruh2IFfg4WbdnlR",
+            "ImagesUrls": [
+                "https://i.scdn.co/image/ab67616d0000b2737a885964a3f0c07182930aff",
+                "https://i.scdn.co/image/ab67616d00001e027a885964a3f0c07182930aff",
+                "https://i.scdn.co/image/ab67616d000048517a885964a3f0c07182930aff"
+            ],
+            "Name": "Possessed by Fire",
+            "ReleaseDate": "1986-11-08",
+            "Uri": "spotify:album:5C8Mjwwruh2IFfg4WbdnlR"
+        },
+        {
+            "Artists": [
+                "Vektor"
+            ],
+            "Genres": [
+                "trash-metal"
+            ],
+            "Href": "https://api.spotify.com/v1/albums/1KzsSFzRO8903u1XTyEi8U",
+            "Id": "1KzsSFzRO8903u1XTyEi8U",
+            "ImagesUrls": [
+                "https://i.scdn.co/image/ab67616d0000b273384186caebdaba10abe1a6b1",
+                "https://i.scdn.co/image/ab67616d00001e02384186caebdaba10abe1a6b1",
+                "https://i.scdn.co/image/ab67616d00004851384186caebdaba10abe1a6b1"
+            ],
+            "Name": "Outer Isolation",
+            "ReleaseDate": "2011",
+            "Uri": "spotify:album:1KzsSFzRO8903u1XTyEi8U"
+        },
+        {
+            "Artists": [
+                "Exciter"
+            ],
+            "Genres": [
+                "trash-metal"
+            ],
+            "Href": "https://api.spotify.com/v1/albums/4jV5DFEggX8yPy0CPQ42il",
+            "Id": "4jV5DFEggX8yPy0CPQ42il",
+            "ImagesUrls": [
+                "https://i.scdn.co/image/ab67616d0000b273517867265ea8851069d4a398",
+                "https://i.scdn.co/image/ab67616d00001e02517867265ea8851069d4a398",
+                "https://i.scdn.co/image/ab67616d00004851517867265ea8851069d4a398"
+            ],
+            "Name": "Heavy Metal Maniac",
+            "ReleaseDate": "1983",
+            "Uri": "spotify:album:4jV5DFEggX8yPy0CPQ42il"
+        },
+        {
+            "Artists": [
+                "Exciter"
+            ],
+            "Genres": [
+                "trash-metal"
+            ],
+            "Href": "https://api.spotify.com/v1/albums/76Hn9C2wEIPZWYw30jyHcm",
+            "Id": "76Hn9C2wEIPZWYw30jyHcm",
+            "ImagesUrls": [
+                "https://i.scdn.co/image/ab67616d0000b273caa5b0984b9f4476f1647fb8",
+                "https://i.scdn.co/image/ab67616d00001e02caa5b0984b9f4476f1647fb8",
+                "https://i.scdn.co/image/ab67616d00004851caa5b0984b9f4476f1647fb8"
+            ],
+            "Name": "Violence & Force",
+            "ReleaseDate": "1984",
+            "Uri": "spotify:album:76Hn9C2wEIPZWYw30jyHcm"
+        },
+        {
+            "Artists": [
+                "Anvil"
+            ],
+            "Genres": [
+                "trash-metal"
+            ],
+            "Href": "https://api.spotify.com/v1/albums/2JBtXhIEZzDfbAPNuxWtTW",
+            "Id": "2JBtXhIEZzDfbAPNuxWtTW",
+            "ImagesUrls": [
+                "https://i.scdn.co/image/ab67616d0000b273b81d4380e92422d835512549",
+                "https://i.scdn.co/image/ab67616d00001e02b81d4380e92422d835512549",
+                "https://i.scdn.co/image/ab67616d00004851b81d4380e92422d835512549"
+            ],
+            "Name": "Forged in Fire",
+            "ReleaseDate": "1983-01-01",
+            "Uri": "spotify:album:2JBtXhIEZzDfbAPNuxWtTW"
+        },
+        {
+            "Artists": [
+                "Laaz Rockit"
+            ],
+            "Genres": [
+                "trash-metal"
+            ],
+            "Href": "https://api.spotify.com/v1/albums/2FoE8Bo2CTN1IiwScI2hZj",
+            "Id": "2FoE8Bo2CTN1IiwScI2hZj",
+            "ImagesUrls": [
+                "https://i.scdn.co/image/ab67616d0000b27339032ff7cc98a4361a8dce44",
+                "https://i.scdn.co/image/ab67616d00001e0239032ff7cc98a4361a8dce44",
+                "https://i.scdn.co/image/ab67616d0000485139032ff7cc98a4361a8dce44"
+            ],
+            "Name": "Nothing Sacred",
+            "ReleaseDate": "2009-11-21",
+            "Uri": "spotify:album:2FoE8Bo2CTN1IiwScI2hZj"
+        },
+        {
+            "Artists": [
+                "Laaz Rockit"
+            ],
+            "Genres": [
+                "trash-metal"
+            ],
+            "Href": "https://api.spotify.com/v1/albums/6vQJnE6wsh4fc4wvy2fr9O",
+            "Id": "6vQJnE6wsh4fc4wvy2fr9O",
+            "ImagesUrls": [
+                "https://i.scdn.co/image/ab67616d0000b273846f9eff0ed9fd781e59850c",
+                "https://i.scdn.co/image/ab67616d00001e02846f9eff0ed9fd781e59850c",
+                "https://i.scdn.co/image/ab67616d00004851846f9eff0ed9fd781e59850c"
+            ],
+            "Name": "Annihilation Principle",
+            "ReleaseDate": "2009-01-30",
+            "Uri": "spotify:album:6vQJnE6wsh4fc4wvy2fr9O"
+        },
+        {
+            "Artists": [
+                "Demolition Hammer"
+            ],
+            "Genres": [
+                "trash-metal"
+            ],
+            "Href": "https://api.spotify.com/v1/albums/4Nm4dlAVPjoWcrK14r8oP3",
+            "Id": "4Nm4dlAVPjoWcrK14r8oP3",
+            "ImagesUrls": [
+                "https://i.scdn.co/image/ab67616d0000b273f2fd66f160564a9f6ee25f8f",
+                "https://i.scdn.co/image/ab67616d00001e02f2fd66f160564a9f6ee25f8f",
+                "https://i.scdn.co/image/ab67616d00004851f2fd66f160564a9f6ee25f8f"
+            ],
+            "Name": "Tortured Existence",
+            "ReleaseDate": "1990",
+            "Uri": "spotify:album:4Nm4dlAVPjoWcrK14r8oP3"
+        },
+        {
+            "Artists": [
+                "Sacrifice"
+            ],
+            "Genres": [
+                "trash-metal"
+            ],
+            "Href": "https://api.spotify.com/v1/albums/5IBqF8TQlEMk8cJWi2fats",
+            "Id": "5IBqF8TQlEMk8cJWi2fats",
+            "ImagesUrls": [
+                "https://i.scdn.co/image/ab67616d0000b2738bdf42ff580f9bf78f393b77",
+                "https://i.scdn.co/image/ab67616d00001e028bdf42ff580f9bf78f393b77",
+                "https://i.scdn.co/image/ab67616d000048518bdf42ff580f9bf78f393b77"
+            ],
+            "Name": "Soldiers Of Misfortune",
+            "ReleaseDate": "1991",
+            "Uri": "spotify:album:5IBqF8TQlEMk8cJWi2fats"
+        },
+        {
+            "Artists": [
+                "Sacrifice"
+            ],
+            "Genres": [
+                "trash-metal"
+            ],
+            "Href": "https://api.spotify.com/v1/albums/1S1dUnQLb1JA4WaxIk0M0l",
+            "Id": "1S1dUnQLb1JA4WaxIk0M0l",
+            "ImagesUrls": [
+                "https://i.scdn.co/image/ab67616d0000b2736a4534d42cba650484359293",
+                "https://i.scdn.co/image/ab67616d00001e026a4534d42cba650484359293",
+                "https://i.scdn.co/image/ab67616d000048516a4534d42cba650484359293"
+            ],
+            "Name": "Apocalypse Inside",
+            "ReleaseDate": "1993-06-15",
+            "Uri": "spotify:album:1S1dUnQLb1JA4WaxIk0M0l"
+        },
+        {
+            "Artists": [
+                "Agent Steel"
+            ],
+            "Genres": [
+                "trash-metal"
+            ],
+            "Href": "https://api.spotify.com/v1/albums/33w5Y1NMYvaifunYJJtDCT",
+            "Id": "33w5Y1NMYvaifunYJJtDCT",
+            "ImagesUrls": [
+                "https://i.scdn.co/image/ab67616d0000b273e89ef15f112582598f88f633",
+                "https://i.scdn.co/image/ab67616d00001e02e89ef15f112582598f88f633",
+                "https://i.scdn.co/image/ab67616d00004851e89ef15f112582598f88f633"
+            ],
+            "Name": "Skeptics Apocalypse",
+            "ReleaseDate": "1985",
+            "Uri": "spotify:album:33w5Y1NMYvaifunYJJtDCT"
+        },
+        {
+            "Artists": [
+                "Agent Steel"
+            ],
+            "Genres": [
+                "trash-metal"
+            ],
+            "Href": "https://api.spotify.com/v1/albums/7siVa1MZ8dAPzekgWFoGKh",
+            "Id": "7siVa1MZ8dAPzekgWFoGKh",
+            "ImagesUrls": [
+                "https://i.scdn.co/image/ab67616d0000b2734ea43f3e233bc6e0377eed96",
+                "https://i.scdn.co/image/ab67616d00001e024ea43f3e233bc6e0377eed96",
+                "https://i.scdn.co/image/ab67616d000048514ea43f3e233bc6e0377eed96"
+            ],
+            "Name": "Unstoppable Force",
+            "ReleaseDate": "1985",
+            "Uri": "spotify:album:7siVa1MZ8dAPzekgWFoGKh"
+        },
+        {
+            "Artists": [
+                "Evildead"
+            ],
+            "Genres": [
+                "trash-metal"
+            ],
+            "Href": "https://api.spotify.com/v1/albums/0p65AMSlyx1Lew0i5BGbRn",
+            "Id": "0p65AMSlyx1Lew0i5BGbRn",
+            "ImagesUrls": [
+                "https://i.scdn.co/image/ab67616d0000b2737ddb9b2b33e826c5a881af56",
+                "https://i.scdn.co/image/ab67616d00001e027ddb9b2b33e826c5a881af56",
+                "https://i.scdn.co/image/ab67616d000048517ddb9b2b33e826c5a881af56"
+            ],
+            "Name": "Annihilation of Civilization",
+            "ReleaseDate": "1989-04-03",
+            "Uri": "spotify:album:0p65AMSlyx1Lew0i5BGbRn"
+        },
+        {
+            "Artists": [
+                "Morbid Saint"
+            ],
+            "Genres": [
+                "trash-metal"
+            ],
+            "Href": "https://api.spotify.com/v1/albums/7aTCuZbrpVleXKbdbFP1tx",
+            "Id": "7aTCuZbrpVleXKbdbFP1tx",
+            "ImagesUrls": [
+                "https://i.scdn.co/image/ab67616d0000b27338fa8a486d94535bb332c372",
+                "https://i.scdn.co/image/ab67616d00001e0238fa8a486d94535bb332c372",
+                "https://i.scdn.co/image/ab67616d0000485138fa8a486d94535bb332c372"
+            ],
+            "Name": "Spectrum of Death (Extended Edition)",
+            "ReleaseDate": "2016-03-11",
+            "Uri": "spotify:album:7aTCuZbrpVleXKbdbFP1tx"
+        },
+        {
+            "Artists": [
+                "Xentrix"
+            ],
+            "Genres": [
+                "trash-metal"
+            ],
+            "Href": "https://api.spotify.com/v1/albums/6RgKLR44gnWGrl7D8QIafx",
+            "Id": "6RgKLR44gnWGrl7D8QIafx",
+            "ImagesUrls": [
+                "https://i.scdn.co/image/ab67616d0000b273b2e0de3adea5d8f259613bf3",
+                "https://i.scdn.co/image/ab67616d00001e02b2e0de3adea5d8f259613bf3",
+                "https://i.scdn.co/image/ab67616d00004851b2e0de3adea5d8f259613bf3"
+            ],
+            "Name": "For Whose Advantage?",
+            "ReleaseDate": "1990-08-21",
+            "Uri": "spotify:album:6RgKLR44gnWGrl7D8QIafx"
+        },
+        {
+            "Artists": [
+                "Tourniquet"
+            ],
+            "Genres": [
+                "trash-metal"
+            ],
+            "Href": "https://api.spotify.com/v1/albums/31UsC22Xg5UfM0u4Rsis4N",
+            "Id": "31UsC22Xg5UfM0u4Rsis4N",
+            "ImagesUrls": [
+                "https://i.scdn.co/image/ab67616d0000b273dd8a1fe78dfc583d2701c09e",
+                "https://i.scdn.co/image/ab67616d00001e02dd8a1fe78dfc583d2701c09e",
+                "https://i.scdn.co/image/ab67616d00004851dd8a1fe78dfc583d2701c09e"
+            ],
+            "Name": "Stop the Bleeding",
+            "ReleaseDate": "1990",
+            "Uri": "spotify:album:31UsC22Xg5UfM0u4Rsis4N"
+        },
+        {
+            "Artists": [
+                "Tourniquet"
+            ],
+            "Genres": [
+                "trash-metal"
+            ],
+            "Href": "https://api.spotify.com/v1/albums/52iANwoD2mKNxvXFmmTotC",
+            "Id": "52iANwoD2mKNxvXFmmTotC",
+            "ImagesUrls": [
+                "https://i.scdn.co/image/ab67616d0000b273a914df3b5376401092933da7",
+                "https://i.scdn.co/image/ab67616d00001e02a914df3b5376401092933da7",
+                "https://i.scdn.co/image/ab67616d00004851a914df3b5376401092933da7"
+            ],
+            "Name": "Pathogenic Ocular Dissonance (Collector's Edition)",
+            "ReleaseDate": "2020-06-20",
+            "Uri": "spotify:album:52iANwoD2mKNxvXFmmTotC"
+        },
+        {
+            "Artists": [
+                "Nasty Savage"
+            ],
+            "Genres": [
+                "trash-metal"
+            ],
+            "Href": "https://api.spotify.com/v1/albums/2YAqtstluA9SPxBcJnulcp",
+            "Id": "2YAqtstluA9SPxBcJnulcp",
+            "ImagesUrls": [
+                "https://i.scdn.co/image/ab67616d0000b2735d0133d8db5c8657d4815dc4",
+                "https://i.scdn.co/image/ab67616d00001e025d0133d8db5c8657d4815dc4",
+                "https://i.scdn.co/image/ab67616d000048515d0133d8db5c8657d4815dc4"
+            ],
+            "Name": "Nasty Savage",
+            "ReleaseDate": "1985",
+            "Uri": "spotify:album:2YAqtstluA9SPxBcJnulcp"
+        },
+        {
+            "Artists": [
+                "Skyclad"
+            ],
+            "Genres": [
+                "trash-metal"
+            ],
+            "Href": "https://api.spotify.com/v1/albums/667rKRTmuq317m2ZM82jOb",
+            "Id": "667rKRTmuq317m2ZM82jOb",
+            "ImagesUrls": [
+                "https://i.scdn.co/image/ab67616d0000b2731cb0bd22099a55c3f3ef8cc9",
+                "https://i.scdn.co/image/ab67616d00001e021cb0bd22099a55c3f3ef8cc9",
+                "https://i.scdn.co/image/ab67616d000048511cb0bd22099a55c3f3ef8cc9"
+            ],
+            "Name": "The Wayward Sons of Mother Earth",
+            "ReleaseDate": "1991-10-17",
+            "Uri": "spotify:album:667rKRTmuq317m2ZM82jOb"
+        },
+        {
+            "Artists": [
+                "Protector"
+            ],
+            "Genres": [
+                "trash-metal"
+            ],
+            "Href": "https://api.spotify.com/v1/albums/1k88rbUrhxc0nEUJz2Nev0",
+            "Id": "1k88rbUrhxc0nEUJz2Nev0",
+            "ImagesUrls": [
+                "https://i.scdn.co/image/ab67616d0000b2734a02091b659f47c1330a71e9",
+                "https://i.scdn.co/image/ab67616d00001e024a02091b659f47c1330a71e9",
+                "https://i.scdn.co/image/ab67616d000048514a02091b659f47c1330a71e9"
+            ],
+            "Name": "Golem",
+            "ReleaseDate": "1988",
+            "Uri": "spotify:album:1k88rbUrhxc0nEUJz2Nev0"
+        },
+        {
+            "Artists": [
+                "Rigor Mortis",
+                "Mike Scaccia",
+                "Bruce Corbitt",
+                "Casey Orr",
+                "Harden Harrison",
+                "Dave Ogilvie"
+            ],
+            "Genres": [
+                "trash-metal"
+            ],
+            "Href": "https://api.spotify.com/v1/albums/3bj0lJ2xYiBgW0htsQemdb",
+            "Id": "3bj0lJ2xYiBgW0htsQemdb",
+            "ImagesUrls": [
+                "https://i.scdn.co/image/ab67616d0000b273f35c07b5e9d482ea1d7925f6",
+                "https://i.scdn.co/image/ab67616d00001e02f35c07b5e9d482ea1d7925f6",
+                "https://i.scdn.co/image/ab67616d00004851f35c07b5e9d482ea1d7925f6"
+            ],
+            "Name": "Rigor Mortis (Expanded Edition) [Remastered]",
+            "ReleaseDate": "1988-10-17",
+            "Uri": "spotify:album:3bj0lJ2xYiBgW0htsQemdb"
+        },
+        {
+            "Artists": [
+                "Living Death"
+            ],
+            "Genres": [
+                "trash-metal"
+            ],
+            "Href": "https://api.spotify.com/v1/albums/59lcy07zrJ93kPUBXrbhwl",
+            "Id": "59lcy07zrJ93kPUBXrbhwl",
+            "ImagesUrls": [
+                "https://i.scdn.co/image/ab67616d0000b27304539cef2ea39ab27c3588c3",
+                "https://i.scdn.co/image/ab67616d00001e0204539cef2ea39ab27c3588c3",
+                "https://i.scdn.co/image/ab67616d0000485104539cef2ea39ab27c3588c3"
+            ],
+            "Name": "Vengeance Of Hell",
+            "ReleaseDate": "2002-06-24",
+            "Uri": "spotify:album:59lcy07zrJ93kPUBXrbhwl"
+        },
+        {
+            "Artists": [
+                "Piledriver"
+            ],
+            "Genres": [
+                "trash-metal"
+            ],
+            "Href": "https://api.spotify.com/v1/albums/7peaoR6imU4K1Sk09hHKPJ",
+            "Id": "7peaoR6imU4K1Sk09hHKPJ",
+            "ImagesUrls": [
+                "https://i.scdn.co/image/ab67616d0000b2734489260a989033d33e736a0b",
+                "https://i.scdn.co/image/ab67616d00001e024489260a989033d33e736a0b",
+                "https://i.scdn.co/image/ab67616d000048514489260a989033d33e736a0b"
+            ],
+            "Name": "Stay Ugly",
+            "ReleaseDate": "1986",
+            "Uri": "spotify:album:7peaoR6imU4K1Sk09hHKPJ"
+        },
+        {
+            "Artists": [
+                "Anacrusis"
+            ],
+            "Genres": [
+                "trash-metal"
+            ],
+            "Href": "https://api.spotify.com/v1/albums/5lfEphypKqCu2Tj3kh1gFJ",
+            "Id": "5lfEphypKqCu2Tj3kh1gFJ",
+            "ImagesUrls": [
+                "https://i.scdn.co/image/ab67616d0000b2730c4f22a9ae2a0a087d85e88c",
+                "https://i.scdn.co/image/ab67616d00001e020c4f22a9ae2a0a087d85e88c",
+                "https://i.scdn.co/image/ab67616d000048510c4f22a9ae2a0a087d85e88c"
+            ],
+            "Name": "Screams and Whispers",
+            "ReleaseDate": "1993",
+            "Uri": "spotify:album:5lfEphypKqCu2Tj3kh1gFJ"
+        },
+        {
+            "Artists": [
+                "Anacrusis"
+            ],
+            "Genres": [
+                "trash-metal"
+            ],
+            "Href": "https://api.spotify.com/v1/albums/00SnUIgAjoaRoLoGiijmtW",
+            "Id": "00SnUIgAjoaRoLoGiijmtW",
+            "ImagesUrls": [
+                "https://i.scdn.co/image/ab67616d0000b273fded11400a57fd760fdd7807",
+                "https://i.scdn.co/image/ab67616d00001e02fded11400a57fd760fdd7807",
+                "https://i.scdn.co/image/ab67616d00004851fded11400a57fd760fdd7807"
+            ],
+            "Name": "Manic Impressions",
+            "ReleaseDate": "1991-05-01",
+            "Uri": "spotify:album:00SnUIgAjoaRoLoGiijmtW"
+        },
+        {
+            "Artists": [
+                "Atrophy"
+            ],
+            "Genres": [
+                "trash-metal"
+            ],
+            "Href": "https://api.spotify.com/v1/albums/1uyFW7daSqB3cTHzJcsSYN",
+            "Id": "1uyFW7daSqB3cTHzJcsSYN",
+            "ImagesUrls": [
+                "https://i.scdn.co/image/ab67616d0000b273bfa9462d2ce3f062a04f6c20",
+                "https://i.scdn.co/image/ab67616d00001e02bfa9462d2ce3f062a04f6c20",
+                "https://i.scdn.co/image/ab67616d00004851bfa9462d2ce3f062a04f6c20"
+            ],
+            "Name": "Socialized Hate",
+            "ReleaseDate": "1988-10-01",
+            "Uri": "spotify:album:1uyFW7daSqB3cTHzJcsSYN"
+        },
+        {
+            "Artists": [
+                "Holy Terror"
+            ],
+            "Genres": [
+                "trash-metal"
+            ],
+            "Href": "https://api.spotify.com/v1/albums/2GOtXTMdnFatnW4CAqLdV8",
+            "Id": "2GOtXTMdnFatnW4CAqLdV8",
+            "ImagesUrls": [
+                "https://i.scdn.co/image/ab67616d0000b2731cc27a929d7bafe5b91d2a7b",
+                "https://i.scdn.co/image/ab67616d00001e021cc27a929d7bafe5b91d2a7b",
+                "https://i.scdn.co/image/ab67616d000048511cc27a929d7bafe5b91d2a7b"
+            ],
+            "Name": "Total Terror",
+            "ReleaseDate": "2017-07-21",
+            "Uri": "spotify:album:2GOtXTMdnFatnW4CAqLdV8"
+        },
+        {
+            "Artists": [
+                "Crossfire"
+            ],
+            "Genres": [
+                "trash-metal"
+            ],
+            "Href": "https://api.spotify.com/v1/albums/4cxW0SAKP74tG4wnnOf5Z2",
+            "Id": "4cxW0SAKP74tG4wnnOf5Z2",
+            "ImagesUrls": [
+                "https://i.scdn.co/image/ab67616d0000b273ed0792e39bb43ff89b39b423",
+                "https://i.scdn.co/image/ab67616d00001e02ed0792e39bb43ff89b39b423",
+                "https://i.scdn.co/image/ab67616d00004851ed0792e39bb43ff89b39b423"
+            ],
+            "Name": "See You in Hell",
+            "ReleaseDate": "1983",
+            "Uri": "spotify:album:4cxW0SAKP74tG4wnnOf5Z2"
+        },
+        {
+            "Artists": [
+                "Crossfire"
+            ],
+            "Genres": [
+                "trash-metal"
+            ],
+            "Href": "https://api.spotify.com/v1/albums/0yOquqir8YMQ12Y88rQmEP",
+            "Id": "0yOquqir8YMQ12Y88rQmEP",
+            "ImagesUrls": [
+                "https://i.scdn.co/image/ab67616d0000b2732e21fec006cd3a5d943c6c95",
+                "https://i.scdn.co/image/ab67616d00001e022e21fec006cd3a5d943c6c95",
+                "https://i.scdn.co/image/ab67616d000048512e21fec006cd3a5d943c6c95"
+            ],
+            "Name": "Second Attack",
+            "ReleaseDate": "2012-10-01",
+            "Uri": "spotify:album:0yOquqir8YMQ12Y88rQmEP"
+        },
+        {
+            "Artists": [
+                "Savage"
+            ],
+            "Genres": [
+                "trash-metal"
+            ],
+            "Href": "https://api.spotify.com/v1/albums/6TUS4k98RPfDYzJDODuOXm",
+            "Id": "6TUS4k98RPfDYzJDODuOXm",
+            "ImagesUrls": [
+                "https://i.scdn.co/image/ab67616d0000b27392c448edbb67ba4f8a17c9dc",
+                "https://i.scdn.co/image/ab67616d00001e0292c448edbb67ba4f8a17c9dc",
+                "https://i.scdn.co/image/ab67616d0000485192c448edbb67ba4f8a17c9dc"
+            ],
+            "Name": "Loose 'n' Lethal",
+            "ReleaseDate": "2009-01-12",
+            "Uri": "spotify:album:6TUS4k98RPfDYzJDODuOXm"
+        },
+        {
+            "Artists": [
+                "Vendetta"
+            ],
+            "Genres": [
+                "trash-metal"
+            ],
+            "Href": "https://api.spotify.com/v1/albums/4F0pxEpdtlDe9Uco6NJtwK",
+            "Id": "4F0pxEpdtlDe9Uco6NJtwK",
+            "ImagesUrls": [
+                "https://i.scdn.co/image/ab67616d0000b27328d8320d5806248c4f11e6f3",
+                "https://i.scdn.co/image/ab67616d00001e0228d8320d5806248c4f11e6f3",
+                "https://i.scdn.co/image/ab67616d0000485128d8320d5806248c4f11e6f3"
+            ],
+            "Name": "Brain Damage",
+            "ReleaseDate": "1988",
+            "Uri": "spotify:album:4F0pxEpdtlDe9Uco6NJtwK"
+        },
+        {
+            "Artists": [
+                "Invocator"
+            ],
+            "Genres": [
+                "trash-metal"
+            ],
+            "Href": "https://api.spotify.com/v1/albums/1tW0SG8ENeOR8tkmvS9A3R",
+            "Id": "1tW0SG8ENeOR8tkmvS9A3R",
+            "ImagesUrls": [
+                "https://i.scdn.co/image/ab67616d0000b273143d90a7ec4b63ddfc786ac6",
+                "https://i.scdn.co/image/ab67616d00001e02143d90a7ec4b63ddfc786ac6",
+                "https://i.scdn.co/image/ab67616d00004851143d90a7ec4b63ddfc786ac6"
+            ],
+            "Name": "Excursions Demise",
+            "ReleaseDate": "1991-01-01",
+            "Uri": "spotify:album:1tW0SG8ENeOR8tkmvS9A3R"
+        },
+        {
+            "Artists": [
+                "Deathrow"
+            ],
+            "Genres": [
+                "trash-metal"
+            ],
+            "Href": "https://api.spotify.com/v1/albums/2yzKjV8SqUfKCWGJqxbuWa",
+            "Id": "2yzKjV8SqUfKCWGJqxbuWa",
+            "ImagesUrls": [
+                "https://i.scdn.co/image/ab67616d0000b273a160e315cb59997beb60fd20",
+                "https://i.scdn.co/image/ab67616d00001e02a160e315cb59997beb60fd20",
+                "https://i.scdn.co/image/ab67616d00004851a160e315cb59997beb60fd20"
+            ],
+            "Name": "Deception Ignored (2018 Remaster)",
+            "ReleaseDate": "1988-01-01",
+            "Uri": "spotify:album:2yzKjV8SqUfKCWGJqxbuWa"
+        },
+        {
+            "Artists": [
+                "Watchtower"
+            ],
+            "Genres": [
+                "trash-metal"
+            ],
+            "Href": "https://api.spotify.com/v1/albums/36QIlBeBMaEoocBEcnzLpW",
+            "Id": "36QIlBeBMaEoocBEcnzLpW",
+            "ImagesUrls": [
+                "https://i.scdn.co/image/ab67616d0000b27362394db281edc2b8d60598c5",
+                "https://i.scdn.co/image/ab67616d00001e0262394db281edc2b8d60598c5",
+                "https://i.scdn.co/image/ab67616d0000485162394db281edc2b8d60598c5"
+            ],
+            "Name": "Control and Resistance",
+            "ReleaseDate": "1989-01-01",
+            "Uri": "spotify:album:36QIlBeBMaEoocBEcnzLpW"
+        },
+        {
+            "Artists": [
+                "Infernäl Mäjesty"
+            ],
+            "Genres": [
+                "trash-metal"
+            ],
+            "Href": "https://api.spotify.com/v1/albums/5981iN3Ex4PQ2rAU52r4Kg",
+            "Id": "5981iN3Ex4PQ2rAU52r4Kg",
+            "ImagesUrls": [
+                "https://i.scdn.co/image/ab67616d0000b2738a94479db5eb4f10836bec44",
+                "https://i.scdn.co/image/ab67616d00001e028a94479db5eb4f10836bec44",
+                "https://i.scdn.co/image/ab67616d000048518a94479db5eb4f10836bec44"
+            ],
+            "Name": "One Who Points To Death",
+            "ReleaseDate": "2004",
+            "Uri": "spotify:album:5981iN3Ex4PQ2rAU52r4Kg"
+        },
+        {
+            "Artists": [
+                "Assorted Heap"
+            ],
+            "Genres": [
+                "trash-metal"
+            ],
+            "Href": "https://api.spotify.com/v1/albums/1lklNL1QO6ODT6DjGPVzJf",
+            "Id": "1lklNL1QO6ODT6DjGPVzJf",
+            "ImagesUrls": [
+                "https://i.scdn.co/image/ab67616d0000b273fb897923d81739f84a0dbfa2",
+                "https://i.scdn.co/image/ab67616d00001e02fb897923d81739f84a0dbfa2",
+                "https://i.scdn.co/image/ab67616d00004851fb897923d81739f84a0dbfa2"
+            ],
+            "Name": "Mindwaves",
+            "ReleaseDate": "1992",
+            "Uri": "spotify:album:1lklNL1QO6ODT6DjGPVzJf"
+        },
+        {
+            "Artists": [
+                "At War"
+            ],
+            "Genres": [
+                "trash-metal"
+            ],
+            "Href": "https://api.spotify.com/v1/albums/4Rnqb6u6GjQUAUPFZRZfmb",
+            "Id": "4Rnqb6u6GjQUAUPFZRZfmb",
+            "ImagesUrls": [
+                "https://i.scdn.co/image/ab67616d0000b273cb25ae942e6a03feeab1b370",
+                "https://i.scdn.co/image/ab67616d00001e02cb25ae942e6a03feeab1b370",
+                "https://i.scdn.co/image/ab67616d00004851cb25ae942e6a03feeab1b370"
+            ],
+            "Name": "Ordered to Kill",
+            "ReleaseDate": "1986-01-01",
+            "Uri": "spotify:album:4Rnqb6u6GjQUAUPFZRZfmb"
+        },
+        {
+            "Artists": [
+                "Defiance"
+            ],
+            "Genres": [
+                "trash-metal"
+            ],
+            "Href": "https://api.spotify.com/v1/albums/3qC4KzMJHvXUIjil2D7amR",
+            "Id": "3qC4KzMJHvXUIjil2D7amR",
+            "ImagesUrls": [
+                "https://i.scdn.co/image/ab67616d0000b27359cb2b42be351fa9a7e6e78d",
+                "https://i.scdn.co/image/ab67616d00001e0259cb2b42be351fa9a7e6e78d",
+                "https://i.scdn.co/image/ab67616d0000485159cb2b42be351fa9a7e6e78d"
+            ],
+            "Name": "Beyond Recognition",
+            "ReleaseDate": "1992-03-27",
+            "Uri": "spotify:album:3qC4KzMJHvXUIjil2D7amR"
+        },
+        {
+            "Artists": [
+                "Deathwish"
+            ],
+            "Genres": [
+                "trash-metal"
+            ],
+            "Href": "https://api.spotify.com/v1/albums/4mll3L8QQIGYXd3kGKWrFT",
+            "Id": "4mll3L8QQIGYXd3kGKWrFT",
+            "ImagesUrls": [
+                "https://i.scdn.co/image/ab67616d0000b273ee5450c42e01c2f362a1cb2c",
+                "https://i.scdn.co/image/ab67616d00001e02ee5450c42e01c2f362a1cb2c",
+                "https://i.scdn.co/image/ab67616d00004851ee5450c42e01c2f362a1cb2c"
+            ],
+            "Name": "Demon Preacher",
+            "ReleaseDate": "1988",
+            "Uri": "spotify:album:4mll3L8QQIGYXd3kGKWrFT"
+        },
+        {
+            "Artists": [
+                "Fallen Angel"
+            ],
+            "Genres": [
+                "trash-metal"
+            ],
+            "Href": "https://api.spotify.com/v1/albums/66DQBbeppyxS0xfEJnXozJ",
+            "Id": "66DQBbeppyxS0xfEJnXozJ",
+            "ImagesUrls": [
+                "https://i.scdn.co/image/ab67616d0000b273854757519d2c03b5dca669b6",
+                "https://i.scdn.co/image/ab67616d00001e02854757519d2c03b5dca669b6",
+                "https://i.scdn.co/image/ab67616d00004851854757519d2c03b5dca669b6"
+            ],
+            "Name": "Faith Fails",
+            "ReleaseDate": "1992-01-01",
+            "Uri": "spotify:album:66DQBbeppyxS0xfEJnXozJ"
+        },
+        {
+            "Artists": [
+                "Fallen Angel"
+            ],
+            "Genres": [
+                "trash-metal"
+            ],
+            "Href": "https://api.spotify.com/v1/albums/5pJ8m9VYKT3lHreYFAXsTH",
+            "Id": "5pJ8m9VYKT3lHreYFAXsTH",
+            "ImagesUrls": [
+                "https://i.scdn.co/image/ab67616d0000b2735a7b6434e87242b94d6d3b81",
+                "https://i.scdn.co/image/ab67616d00001e025a7b6434e87242b94d6d3b81",
+                "https://i.scdn.co/image/ab67616d000048515a7b6434e87242b94d6d3b81"
+            ],
+            "Name": "Fallen Angel",
+            "ReleaseDate": "1990-02-08",
+            "Uri": "spotify:album:5pJ8m9VYKT3lHreYFAXsTH"
+        },
+        {
+            "Artists": [
+                "Aftermath"
+            ],
+            "Genres": [
+                "trash-metal"
+            ],
+            "Href": "https://api.spotify.com/v1/albums/55zhvQVbUhZReTsgg1IULE",
+            "Id": "55zhvQVbUhZReTsgg1IULE",
+            "ImagesUrls": [
+                "https://i.scdn.co/image/ab67616d0000b2732feca00d9546a0d444f61899",
+                "https://i.scdn.co/image/ab67616d00001e022feca00d9546a0d444f61899",
+                "https://i.scdn.co/image/ab67616d000048512feca00d9546a0d444f61899"
+            ],
+            "Name": "Eyes of Tomorrow",
+            "ReleaseDate": "1994-03-01",
+            "Uri": "spotify:album:55zhvQVbUhZReTsgg1IULE"
+        },
+        {
+            "Artists": [
+                "Usurper"
+            ],
+            "Genres": [
+                "trash-metal"
+            ],
+            "Href": "https://api.spotify.com/v1/albums/0A4PtNcxi6odKjHUAyly1x",
+            "Id": "0A4PtNcxi6odKjHUAyly1x",
+            "ImagesUrls": [
+                "https://i.scdn.co/image/ab67616d0000b2739f24a05f95a5a5f147ff33c5",
+                "https://i.scdn.co/image/ab67616d00001e029f24a05f95a5a5f147ff33c5",
+                "https://i.scdn.co/image/ab67616d000048519f24a05f95a5a5f147ff33c5"
+            ],
+            "Name": "Divine Spiritual and Intellectual Development",
+            "ReleaseDate": "2012-10-05",
+            "Uri": "spotify:album:0A4PtNcxi6odKjHUAyly1x"
+        },
+        {
+            "Artists": [
+                "Mekong Delta"
+            ],
+            "Genres": [
+                "trash-metal"
+            ],
+            "Href": "https://api.spotify.com/v1/albums/730y30Qi5IS2n1QNjsc074",
+            "Id": "730y30Qi5IS2n1QNjsc074",
+            "ImagesUrls": [
+                "https://i.scdn.co/image/ab67616d0000b2738bf53987a766411c85c8cb8c",
+                "https://i.scdn.co/image/ab67616d00001e028bf53987a766411c85c8cb8c",
+                "https://i.scdn.co/image/ab67616d000048518bf53987a766411c85c8cb8c"
+            ],
+            "Name": "Dances of Death (And Other Walking Shadows)",
+            "ReleaseDate": "1990-01-01",
+            "Uri": "spotify:album:730y30Qi5IS2n1QNjsc074"
+        },
+        {
+            "Artists": [
+                "Witchburner"
+            ],
+            "Genres": [
+                "trash-metal"
+            ],
+            "Href": "https://api.spotify.com/v1/albums/2qrgyQCzswfRiFqp5hqArd",
+            "Id": "2qrgyQCzswfRiFqp5hqArd",
+            "ImagesUrls": [
+                "https://i.scdn.co/image/ab67616d0000b2735cbfee35ab9ee60d8305b351",
+                "https://i.scdn.co/image/ab67616d00001e025cbfee35ab9ee60d8305b351",
+                "https://i.scdn.co/image/ab67616d000048515cbfee35ab9ee60d8305b351"
+            ],
+            "Name": "Witchburner",
+            "ReleaseDate": "1996-11-26",
+            "Uri": "spotify:album:2qrgyQCzswfRiFqp5hqArd"
+        }
+    ]
+}

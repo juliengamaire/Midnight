@@ -31,10 +31,10 @@ public class JSONManager : MonoBehaviour
     private List<PlaylistTrack<IPlayableItem>> _lastTracksList;
     private Dictionary<string, Album> _albumsInDataBase = new Dictionary<string, Album>();
     private Dictionary<string, Album> _newAlbums = new Dictionary<string, Album>();
-    private HashSet<string> _playlistIdsInDataBase = new HashSet<string>();
-    private HashSet<string> _newPlaylistIds = new HashSet<string>();
+    private Dictionary<string, string> _playlistIdsInDataBase = new Dictionary<string, string>();
+    private Dictionary<string, string> _newPlaylistIds = new Dictionary<string, string>();
 
-    private int newGenreForAlbums = 0;
+    private int _newGenreForAlbums = 0;
 
     public void Start()
     {
@@ -68,7 +68,7 @@ public class JSONManager : MonoBehaviour
 
         if (_saveButton != null)
         {
-            _feedButton.onClick.AddListener(this.SaveUpdatedDataBase);
+            _saveButton.onClick.AddListener(this.SaveUpdatedDataBase);
         }
     }
 
@@ -77,17 +77,20 @@ public class JSONManager : MonoBehaviour
     private void LoadJSON()
     {
         _albumsInDataBase.Clear();
-
-        DataBase dataBase = JsonUtility.FromJson<DataBase>(jsonFile.text);
-
-        foreach (string playlistId in dataBase.PlaylistIdsAlreadyFetched)
+        
+        if (jsonFile != null && !jsonFile.text.Equals(string.Empty))
         {
-            _playlistIdsInDataBase.Add(playlistId);
-        }
+            DataBase dataBase = JsonUtility.FromJson<DataBase>(jsonFile.text);
 
-        foreach (Album album in dataBase.Albums)
-        {
-            _albumsInDataBase.Add(album.Id, album);
+            foreach (PlaylistId playlistId in dataBase.PlaylistIdsAlreadyFetched)
+            {
+                _playlistIdsInDataBase.Add(playlistId.Id, playlistId.Genre);
+            }
+
+            foreach (Album album in dataBase.Albums)
+            {
+                _albumsInDataBase.Add(album.Id, album);
+            }
         }
     }
 
@@ -95,6 +98,8 @@ public class JSONManager : MonoBehaviour
     {
         string jsonUpdated = JsonUtility.ToJson(updatedDataBase);
         File.WriteAllText(Application.dataPath + "/Data/ma_base_de_donnees.json", jsonUpdated);
+
+        Debug.Log("File Saved !");
     }
 
     private void SaveUpdatedDataBase()
@@ -131,17 +136,21 @@ public class JSONManager : MonoBehaviour
     {
         int totalPlaylistIdsCount = _newPlaylistIds.Count + _playlistIdsInDataBase.Count;
 
-        string[] updatedPlaylistIds = new string[totalPlaylistIdsCount];
+        PlaylistId[] updatedPlaylistIds = new PlaylistId[totalPlaylistIdsCount];
 
         int i = 0;
-        foreach (string playlistId in _newPlaylistIds)
+        foreach (KeyValuePair<string, string> pair in _newPlaylistIds)
         {
-            updatedPlaylistIds[i] = playlistId;
+            PlaylistId item = new PlaylistId();
+            item.Id = pair.Key;
+            item.Genre = pair.Value;
+            updatedPlaylistIds[i] = item;
             i++;
         }
-        foreach (string playlistId in _playlistIdsInDataBase)
+        foreach (KeyValuePair<string, string> pair in _playlistIdsInDataBase)
         {
-            updatedPlaylistIds[i] = playlistId;
+            updatedPlaylistIds[i].Id = pair.Key;
+            updatedPlaylistIds[i].Genre = pair.Value;
             i++;
         }
 
@@ -162,7 +171,7 @@ public class JSONManager : MonoBehaviour
                 Debug.LogWarning("There's no genre to attribute");
                 return;
             }
-            if (_playlistIdsInDataBase.Contains(_searchField.text))
+            if (_playlistIdsInDataBase.ContainsKey(_searchField.text))
             {
                 Debug.LogWarning("This playlist has already been fetch");
                 return;
@@ -172,7 +181,7 @@ public class JSONManager : MonoBehaviour
             string query = _searchField.text;
             string genre = _genreField.text;
 
-            _newPlaylistIds.Add(query);
+            _newPlaylistIds.Add(query, genre);
 
             _lastTracksList = await GetAllTracks(query);
 
@@ -184,9 +193,9 @@ public class JSONManager : MonoBehaviour
 
     private void UpdateIHM()
     {
-        _loadingText.text = $"{_newAlbums.Count} new albums to save in data base and {newGenreForAlbums} new genres for Albums.";
+        _loadingText.text = $"{_newAlbums.Count} new albums to save in data base and {_newGenreForAlbums} new genres for Albums.";
 
-        if (_newAlbums.Count > 0 || newGenreForAlbums > 0)
+        if (_newAlbums.Count > 0 || _newGenreForAlbums > 0)
         {
             _saveButton.interactable = true;
         }
@@ -208,7 +217,7 @@ public class JSONManager : MonoBehaviour
             if (_albumsInDataBase.ContainsKey(track.Album.Id))
             {
                 _albumsInDataBase[track.Album.Id].AddGenre(genre);
-                newGenreForAlbums++;
+                _newGenreForAlbums++;
                 return;
             }
 

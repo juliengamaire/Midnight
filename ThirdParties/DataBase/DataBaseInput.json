@@ -1,0 +1,32 @@
+{
+    "Playlists": [
+        {
+            "playlistId": "37i9dQZF1DX68H8ZujdnN7",
+            "genre": "HARD_ROCK"
+        },
+        {
+            "playlistId": "1vvaZMIwtl43a58QkGOcjT",
+            "genre": "TRASH"
+        }
+    ],
+    "Albums": [
+        {
+            "albumId": "7iqG1CTQwnil3TQ0Tiq9DD",
+            "genre": "DJENT"
+        },
+        {
+            "albumId": "2x2VoPa1pG2jSElA73a9Xa",
+            "genre": "DJENT"
+        }
+    ],
+    "Artists": [
+        {
+            "artistId": "2ye2Wgw4gimLv2eAKyk1NB",
+            "genre": "TRASH"
+        },
+        {
+            "artistId": "5M52tdBnJaKSvOpJGz8mfZ",
+            "genre": "HEAVY_METAL"
+        }
+    ]
+}

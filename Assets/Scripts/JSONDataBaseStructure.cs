@@ -26,7 +26,7 @@ public class Album
     public string ReleaseDate;
     public string Uri;
 
-    public void AddGenre(string genre)
+    public bool TryAddGenre(string genre)
     {
         genre = genre.ToLowerInvariant();
         // Vérifiez si le genre existe déjà dans le tableau.
@@ -34,7 +34,9 @@ public class Album
         {
             Array.Resize(ref Genres, Genres.Length + 1);
             Genres[Genres.Length - 1] = genre;
+            return true;
         }
+        return false;
     }
 
     private bool GenreExists(string genre)

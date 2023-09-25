@@ -192,7 +192,7 @@ public class JSONManager : MonoBehaviour
                 isArtistFound = album.Artists.Any(a => a.ToLowerInvariant().Equals(artist.ToLowerInvariant()));
                 if (isArtistFound)
                 {
-                    album.AddGenre(newGenre);
+                    album.TryAddGenre(newGenre);
                     _newGenreForAlbums++;
                 }
             }
@@ -374,7 +374,7 @@ public class JSONManager : MonoBehaviour
             }
             if (_albumsInDataBase.ContainsKey(_searchAlbumField.text))
             {
-                _albumsInDataBase[_searchAlbumField.text].AddGenre(_genreDropdown.options[_genreDropdown.value].text);
+                _albumsInDataBase[_searchAlbumField.text].TryAddGenre(_genreDropdown.options[_genreDropdown.value].text);
                 return;
             }
 
@@ -415,7 +415,7 @@ public class JSONManager : MonoBehaviour
             // If album is already in the dataBase
             if (_albumsInDataBase.ContainsKey(track.Album.Id))
             {
-                _albumsInDataBase[track.Album.Id].AddGenre(genre);
+                _albumsInDataBase[track.Album.Id].TryAddGenre(genre);
                 _newGenreForAlbums++;
                 return;
             }
@@ -428,7 +428,7 @@ public class JSONManager : MonoBehaviour
 
             Album newAlbum = new Album();
             newAlbum.Artists = ArtistsToString(track.Artists);
-            newAlbum.AddGenre(genre);
+            newAlbum.TryAddGenre(genre);
             newAlbum.Href = track.Album.Href;
             newAlbum.Id = track.Album.Id;
             newAlbum.ImagesUrls = ImagesToString(track.Album.Images);
@@ -454,7 +454,7 @@ public class JSONManager : MonoBehaviour
             {
                 Album newAlbum = new Album();
                 newAlbum.Artists = ArtistsToString(_lastFullAlbum.Artists);
-                newAlbum.AddGenre(genre);
+                newAlbum.TryAddGenre(genre);
                 newAlbum.Href = _lastFullAlbum.Href;
                 newAlbum.Id = _lastFullAlbum.Id;
                 newAlbum.ImagesUrls = ImagesToString(_lastFullAlbum.Images);

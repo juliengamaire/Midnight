@@ -1,5 +1,5 @@
 {
-    "Playlists": [
+    "playlists": [
         {
             "playlistId": "37i9dQZF1DX68H8ZujdnN7",
             "genre": "HARD_ROCK"
@@ -9,7 +9,7 @@
             "genre": "TRASH"
         }
     ],
-    "Albums": [
+    "albums": [
         {
             "albumId": "7iqG1CTQwnil3TQ0Tiq9DD",
             "genre": "DJENT"
@@ -19,7 +19,7 @@
             "genre": "DJENT"
         }
     ],
-    "Artists": [
+    "artists": [
         {
             "artistId": "2ye2Wgw4gimLv2eAKyk1NB",
             "genre": "TRASH"

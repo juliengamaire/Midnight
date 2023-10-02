@@ -17,9 +17,18 @@ public class LoginManager : SpotifyServiceListener
     public event ClientConnected OnClientConnected;
 
     [SerializeField]
-    private Button _signInButton, _signOutButton;
-    [SerializeField]
     private TextMeshProUGUI _loadingText;
+    [SerializeField]
+    private TMP_InputField clientIdInputField;
+    [SerializeField]
+    private Toggle rememberMeToggle;
+    [SerializeField]
+    private Button _signInButton;
+    [SerializeField]
+    private string SceneNameToLoad;
+
+    private const string RememberMeKey = "RememberMe";
+    private const string SpotifyClientIDKey = "SpotifyClientID";
 
     public void Start()
     {
@@ -27,18 +36,10 @@ public class LoginManager : SpotifyServiceListener
 
         if (_signInButton != null)
         {
-            _signInButton.onClick.AddListener(() => this.OnSignIn());
-        }
-        if (_signOutButton != null)
-        {
-            _signOutButton.onClick.AddListener(() => this.OnSignOut());
+            _signInButton.onClick.AddListener(() => this.OnLoginButtonClicked());
         }
 
-        if (!ServiceAuthOnStart)
-        {
-            _signInButton.gameObject.SetActive(true);
-            _signOutButton.gameObject.SetActive(false);
-        }
+        LoadRememberMe();
 
         _loadingText.text = string.Empty;
     }
@@ -49,11 +50,12 @@ public class LoginManager : SpotifyServiceListener
 
         bool isConnected = client != null;
         _signInButton.gameObject.SetActive(!isConnected);
-        _signOutButton.gameObject.SetActive(isConnected);
 
         if (isConnected)
         {
             OnClientConnected?.Invoke();
+
+            LoadSceneAsync(SceneNameToLoad);
         }
     }
 
@@ -71,31 +73,55 @@ public class LoginManager : SpotifyServiceListener
         }
     }
 
-    private void OnSignOut()
+    private IEnumerator LoadSceneAsync(string sceneName)
     {
-        SpotifyService service = SpotifyService.Instance;
-        if (service.IsConnected)
+        // Start loading the scene asynchronously
+        AsyncOperation asyncOperation = SceneManager.LoadSceneAsync(sceneName);
+
+        // While the scene is not fully loaded
+        while (!asyncOperation.isDone)
         {
-            service.DeauthorizeUser();
+            // Update the progress bar or loading text
+            float progress = Mathf.Clamp01(asyncOperation.progress / 0.9f);
+            _loadingText.text = $"Loading : {progress * 100}%";
+
+            // Wait for the next frame
+            yield return null;
         }
     }
 
-    //private IEnumerator LoadSceneAsync(string sceneName)
-    //{
-    //    // Start loading the scene asynchronously
-    //    AsyncOperation asyncOperation = SceneManager.LoadSceneAsync(sceneName);
+    private void OnLoginButtonClicked()
+    {
+        if (rememberMeToggle.isOn)
+        {
+            PlayerPrefs.SetInt(RememberMeKey, 1);
+            PlayerPrefs.SetString(SpotifyClientIDKey, clientIdInputField.text);
+        }
+        else
+        {
+            PlayerPrefs.SetInt(RememberMeKey, 0);
+            PlayerPrefs.DeleteKey(SpotifyClientIDKey);
+        }
 
-    //    // While the scene is not fully loaded
-    //    while (!asyncOperation.isDone)
-    //    {
-    //        // Update the progress bar or loading text
-    //        float progress = Mathf.Clamp01(asyncOperation.progress / 0.9f);
-    //        _loadingText.text = $"Loading : {progress * 100}%";
+        PlayerPrefs.Save();
 
-    //        // Wait for the next frame
-    //        yield return null;
-    //    }
-    //}
+        OnSignIn();
+    }
 
-    
+    private void LoadRememberMe()
+    {
+        if (PlayerPrefs.HasKey(RememberMeKey) && PlayerPrefs.GetInt(RememberMeKey) == 1)
+        {
+            rememberMeToggle.isOn = true;
+
+            if (PlayerPrefs.HasKey(SpotifyClientIDKey))
+            {
+                clientIdInputField.text = PlayerPrefs.GetString(SpotifyClientIDKey);
+            }
+        }
+        else
+        {
+            rememberMeToggle.isOn = false;
+        }
+    }    
 }

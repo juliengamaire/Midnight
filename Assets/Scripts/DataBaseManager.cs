@@ -6,6 +6,7 @@ using UnityEngine.UI;
 using TMPro;
 using System.IO;
 using System.Threading.Tasks;
+using System.Linq;
 
 public class DataBaseManager
 {
@@ -298,6 +299,66 @@ public class DataBaseManager
         }
     }
 
+    private async void TryAddGenreByArtistID(ArtistInput artistInput)
+    {
+        if (_client != null && artistInput != null)
+        {
+            if (artistInput.artistId.Equals(string.Empty))
+            {
+                Debug.LogWarning("There's no artist ID to search");
+                return;
+            }
+            if (artistInput.genre.ToLowerInvariant().Equals("none"))
+            {
+                Debug.LogWarning("There's no genre to attribute");
+                return;
+            }
+
+            FullArtist artistResponse = await _client.Artists.Get(artistInput.artistId);
+
+            if (artistResponse != null)
+            {
+                string artistName = artistResponse.Name;
+
+                bool isArtistExistInDataBase = false;
+                bool hasToPerformArtistTopTracksSearch = true;
+
+                foreach (Album album in _albumsInDataBaseByID.Values)
+                {
+                    isArtistExistInDataBase = album.Artists.Any(a => a.ToLowerInvariant().Equals(artistName.ToLowerInvariant()));
+                    if (isArtistExistInDataBase)
+                    {
+                        if (album.TryAddGenre(artistInput.genre))
+                        {
+                            NewGenreAddedToArtistsCount++;
+                        }
+
+                        hasToPerformArtistTopTracksSearch = false;
+                    }
+                }
+
+                foreach (Album album in _newAlbumsByID.Values)
+                {
+                    isArtistExistInDataBase = album.Artists.Any(a => a.ToLowerInvariant().Equals(artistName.ToLowerInvariant()));
+                    if (isArtistExistInDataBase)
+                    {
+                        if (album.TryAddGenre(artistInput.genre))
+                        {
+                            NewGenreAddedToArtistsCount++;
+                        }
+
+                        hasToPerformArtistTopTracksSearch = false;
+                    }
+                }
+
+                if (hasToPerformArtistTopTracksSearch)
+                {
+                    PerformArtistTopTracksSearchByID(artistInput);
+                }
+            }
+        }
+    }
+
     private async void PerformSearchByDataBaseInput(DataBaseInput dataBaseInput)
     {
         float totalOperations = dataBaseInput.playlists.Length + dataBaseInput.albums.Length + dataBaseInput.artists.Length;
@@ -326,7 +387,7 @@ public class DataBaseManager
 
         foreach (ArtistInput artistInput in dataBaseInput.artists)
         {
-            PerformArtistTopTracksSearchByID(artistInput);
+            TryAddGenreByArtistID(artistInput);
 
             // Wait for 2 seconds to not raise limit of API request
             await Task.Delay(_safeAPIWaitInMs);

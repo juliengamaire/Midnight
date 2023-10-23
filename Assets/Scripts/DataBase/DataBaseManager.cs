@@ -10,6 +10,9 @@ using System.Linq;
 
 public class DataBaseManager
 {
+    public delegate void DataBaseLoadedDelegate(bool isCorrectlyLoaded);
+    public event DataBaseLoadedDelegate DataBaseLoaded;
+
     public DataBase DataBase { get; private set; }
     public int NewGenreAddedToArtistsCount { get; private set; }
     public float PerformSearchByDataBaseInputProgress { get; private set; }
@@ -52,7 +55,7 @@ public class DataBaseManager
         }
         catch (Exception)
         {
-            // TODO JULIEN : Trigger WRONG
+            DataBaseLoaded?.Invoke(false);
         }
         
 
@@ -74,11 +77,11 @@ public class DataBaseManager
                     _albumsInDataBaseByID.Add(album.Id, album);
                 }
 
-                // TODO JULIEN : Trigger dataBase loaded
+                DataBaseLoaded?.Invoke(true);
             }
             else
             {
-                // TODO JULIEN : Trigger WRONG
+                DataBaseLoaded?.Invoke(false);
             }
         }
     }
@@ -363,7 +366,7 @@ public class DataBaseManager
     {
         float totalOperations = dataBaseInput.playlists.Length + dataBaseInput.albums.Length + dataBaseInput.artists.Length;
         float currentOperation = 0f;
-
+        PerformSearchByDataBaseInputProgress = 0;
 
         foreach (PlaylistInput playlistInput in dataBaseInput.playlists)
         {

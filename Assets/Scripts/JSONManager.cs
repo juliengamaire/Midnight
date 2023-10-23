@@ -109,7 +109,7 @@ public class JSONManager : MonoBehaviour
 
     public void Start()
     {
-        _loginManager.OnClientConnected += _loginManager_OnClientConnected;
+        //_loginManager.OnClientConnected += _loginManager_OnClientConnected;
 
         _searchPlaylistField.interactable = false;
         _searchAlbumField.interactable = false;
@@ -124,7 +124,7 @@ public class JSONManager : MonoBehaviour
 
     public void OnDestroy()
     {
-        _loginManager.OnClientConnected -= _loginManager_OnClientConnected;
+        //_loginManager.OnClientConnected -= _loginManager_OnClientConnected;
     }
 
     private void _loginManager_OnClientConnected()

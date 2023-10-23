@@ -11,37 +11,29 @@ using System.Collections;
 /// </summary>
 public class LoginManager : SpotifyServiceListener
 {
-    public bool ServiceAuthOnStart = false;
-
-    public delegate void ClientConnected();
-    public event ClientConnected OnClientConnected;
-
     [SerializeField]
-    private TextMeshProUGUI _loadingText;
+    private TMP_InputField _clientIdInputField;
     [SerializeField]
-    private TMP_InputField clientIdInputField;
+    private TMP_InputField _clientSecretInputField;
     [SerializeField]
-    private Toggle rememberMeToggle;
+    private Toggle _rememberMeToggle;
     [SerializeField]
     private Button _signInButton;
     [SerializeField]
-    private string SceneNameToLoad;
+    private string _sceneNameToLoad;
 
-    private const string RememberMeKey = "RememberMe";
-    private const string SpotifyClientIDKey = "SpotifyClientID";
+    private const string RememberMeKey = "Midnight_RememberMe";
+    private const string SpotifyClientIDKey = "Midnight_SpotifyClientID";
+    private const string SpotifyClientSecretKey = "Midnight_SpotifyClientSecret";
 
     public void Start()
     {
-        SpotifyService.Instance.AuthorizeUserOnStart = ServiceAuthOnStart;
-
         if (_signInButton != null)
         {
             _signInButton.onClick.AddListener(() => this.OnLoginButtonClicked());
         }
 
         LoadRememberMe();
-
-        _loadingText.text = string.Empty;
     }
 
     protected override void OnSpotifyConnectionChanged(SpotifyClient client)
@@ -49,22 +41,24 @@ public class LoginManager : SpotifyServiceListener
         base.OnSpotifyConnectionChanged(client);
 
         bool isConnected = client != null;
-        _signInButton.gameObject.SetActive(!isConnected);
 
         if (isConnected)
         {
-            OnClientConnected?.Invoke();
-
-            LoadSceneAsync(SceneNameToLoad);
+            StartCoroutine(LoadSceneAsync(_sceneNameToLoad));
         }
     }
 
-    private void OnSignIn()
+    private void SignIn()
     {
         SpotifyService service = SpotifyService.Instance;
 
         if (!service.IsConnected)
         {
+            service._authMethodConfig.ClientID = _clientIdInputField.text;
+            if (service.AuthType == AuthenticationType.ClientCredentials)
+            {
+                (service._authMethodConfig as ClientCredentials_AuthConfig).ClientSecret = _clientSecretInputField.text;
+            }
             service.AuthorizeUser();
         }
         else
@@ -81,10 +75,6 @@ public class LoginManager : SpotifyServiceListener
         // While the scene is not fully loaded
         while (!asyncOperation.isDone)
         {
-            // Update the progress bar or loading text
-            float progress = Mathf.Clamp01(asyncOperation.progress / 0.9f);
-            _loadingText.text = $"Loading : {progress * 100}%";
-
             // Wait for the next frame
             yield return null;
         }
@@ -92,36 +82,42 @@ public class LoginManager : SpotifyServiceListener
 
     private void OnLoginButtonClicked()
     {
-        if (rememberMeToggle.isOn)
+        if (_rememberMeToggle.isOn)
         {
             PlayerPrefs.SetInt(RememberMeKey, 1);
-            PlayerPrefs.SetString(SpotifyClientIDKey, clientIdInputField.text);
+            PlayerPrefs.SetString(SpotifyClientIDKey, _clientIdInputField.text);
+            PlayerPrefs.SetString(SpotifyClientSecretKey, _clientSecretInputField.text);
         }
         else
         {
             PlayerPrefs.SetInt(RememberMeKey, 0);
             PlayerPrefs.DeleteKey(SpotifyClientIDKey);
+            PlayerPrefs.DeleteKey(SpotifyClientSecretKey);
         }
 
         PlayerPrefs.Save();
 
-        OnSignIn();
+        SignIn();
     }
 
     private void LoadRememberMe()
     {
         if (PlayerPrefs.HasKey(RememberMeKey) && PlayerPrefs.GetInt(RememberMeKey) == 1)
         {
-            rememberMeToggle.isOn = true;
+            _rememberMeToggle.isOn = true;
 
             if (PlayerPrefs.HasKey(SpotifyClientIDKey))
             {
-                clientIdInputField.text = PlayerPrefs.GetString(SpotifyClientIDKey);
+                _clientIdInputField.text = PlayerPrefs.GetString(SpotifyClientIDKey);
+            }
+            if (PlayerPrefs.HasKey(SpotifyClientSecretKey))
+            {
+                _clientSecretInputField.text = PlayerPrefs.GetString(SpotifyClientSecretKey);
             }
         }
         else
         {
-            rememberMeToggle.isOn = false;
+            _rememberMeToggle.isOn = false;
         }
     }    
 }

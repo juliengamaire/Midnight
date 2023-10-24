@@ -2,7 +2,7 @@ using SFB;
 using UnityEngine;
 
 namespace Midnight.Utils
-{ 
+{
     public class Utils : MonoBehaviour
     {
         public static string GetPathViaFileExplorer(string title, string extension)
@@ -18,6 +18,11 @@ namespace Midnight.Utils
             }
 
             return path;
+        }
+
+        public static string GetSavePathViaFileExplorer(string title, string defaultName, string extension)
+        {
+            return StandaloneFileBrowser.SaveFilePanel(title, "", defaultName, extension);
         }
     }
 }

@@ -38,7 +38,7 @@ public class DataBaseManager
 
     private string _jsonDataBasePath;
     private float _performSearchByDataBaseInputProgress;
-    private const int _safeAPIWaitInMs = 3000;
+    private const int _safeAPIWaitInMs = 1000;
 
     public DataBaseManager()
     {
@@ -236,6 +236,21 @@ public class DataBaseManager
         _performSearchByDataBaseInputProgress = 0;
         bool isRequestPerformed = false;
 
+        foreach (ArtistInput artistInput in dataBaseInput.artists)
+        {
+            isRequestPerformed = await TryAddGenreByArtistID(artistInput);
+
+            // Wait for 2 seconds to not raise limit of API request
+            if (isRequestPerformed)
+            {
+                await Task.Delay(_safeAPIWaitInMs);
+            }
+
+            currentOperation++;
+            _performSearchByDataBaseInputProgress = (currentOperation / totalOperations) * 100;
+            PerformSearchProgressUpdated?.Invoke(_performSearchByDataBaseInputProgress);
+        }
+
         foreach (PlaylistInput playlistInput in dataBaseInput.playlists)
         {
             isRequestPerformed = await PerformPlaylistSearchByID(playlistInput);
@@ -254,21 +269,6 @@ public class DataBaseManager
         foreach (AlbumInput albumInput in dataBaseInput.albums)
         {
             isRequestPerformed = await PerformAlbumSearchByID(albumInput);
-
-            // Wait for 2 seconds to not raise limit of API request
-            if (isRequestPerformed)
-            {
-                await Task.Delay(_safeAPIWaitInMs);
-            }
-
-            currentOperation++;
-            _performSearchByDataBaseInputProgress = (currentOperation / totalOperations) * 100;
-            PerformSearchProgressUpdated?.Invoke(_performSearchByDataBaseInputProgress);
-        }
-
-        foreach (ArtistInput artistInput in dataBaseInput.artists)
-        {
-            isRequestPerformed = await TryAddGenreByArtistID(artistInput);
 
             // Wait for 2 seconds to not raise limit of API request
             if (isRequestPerformed)

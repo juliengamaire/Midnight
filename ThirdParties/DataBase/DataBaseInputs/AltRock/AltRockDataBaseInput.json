@@ -1,0 +1,416 @@
+{
+    "artists": [
+        {
+            "artistId": "3XHO7cRUPCLOr6jwp8vsx5",
+            "genre": "ALT_ROCK"
+        },
+        {
+            "artistId": "7Ln80lUS6He07XvHI8qqHH",
+            "genre": "ALT_ROCK"
+        },
+        {
+            "artistId": "7EQ0qTo7fWT7DPxmxtSYEc",
+            "genre": "ALT_ROCK"
+        },
+        {
+            "artistId": "1km0R7wy712AzLkA1WjKET",
+            "genre": "ALT_ROCK"
+        },
+        {
+            "artistId": "5QdyldG4Fl4TPiOIeMNpBZ",
+            "genre": "ALT_ROCK"
+        },
+        {
+            "artistId": "26T3LtbuGT1Fu9m0eRq5X3",
+            "genre": "ALT_ROCK"
+        },
+        {
+            "artistId": "2xaAOVImG2O6lURwqperlD",
+            "genre": "ALT_ROCK"
+        },
+        {
+            "artistId": "3CjlHNtplJyTf9npxaPl5w",
+            "genre": "ALT_ROCK"
+        },
+        {
+            "artistId": "6hl5k4gLl1p3sjhHcb57t2",
+            "genre": "ALT_ROCK"
+        },
+        {
+            "artistId": "1moxjboGR7GNWYIMWsRjgG",
+            "genre": "ALT_ROCK"
+        },
+        {
+            "artistId": "6FQqZYVfTNQ1pCqfkwVFEa",
+            "genre": "ALT_ROCK"
+        },
+        {
+            "artistId": "7jy3rLJdDQY21OgRLCZ9sD",
+            "genre": "ALT_ROCK"
+        },
+        {
+            "artistId": "7gP3bB2nilZXLfPHJhMdvc",
+            "genre": "ALT_ROCK"
+        },
+        {
+            "artistId": "4NpFxQe2UvRCAjto3JqlSl",
+            "genre": "ALT_ROCK"
+        },
+        {
+            "artistId": "3kVUvbeRdcrqQ3oHk5hPdx",
+            "genre": "ALT_ROCK"
+        },
+        {
+            "artistId": "2pqd3HsfsvcBGtHvPOg6eg",
+            "genre": "ALT_ROCK"
+        },
+        {
+            "artistId": "2FXC3k01G6Gw61bmprjgqS",
+            "genre": "ALT_ROCK"
+        },
+        {
+            "artistId": "75mafsNqNE1WSEVxIKuY5C",
+            "genre": "ALT_ROCK"
+        },
+        {
+            "artistId": "53XhwfbYqKCa1cC15pYq2q",
+            "genre": "ALT_ROCK"
+        },
+        {
+            "artistId": "1UfzhwcOR4yfX7yHTPfC9m",
+            "genre": "ALT_ROCK"
+        },
+        {
+            "artistId": "5wFXmYsg3KFJ8BDsQudJ4f",
+            "genre": "ALT_ROCK"
+        },
+        {
+            "artistId": "1rCIEwPp5OnXW0ornlSsRl",
+            "genre": "ALT_ROCK"
+        },
+        {
+            "artistId": "6AawJaQO4i99Be2A3w7BTW",
+            "genre": "ALT_ROCK"
+        },
+        {
+            "artistId": "2uYWxilOVlUdk4oV9DvwqK",
+            "genre": "ALT_ROCK"
+        },
+        {
+            "artistId": "12Chz98pHFMPJEknJQMWvI",
+            "genre": "ALT_ROCK"
+        },
+        {
+            "artistId": "43O3c6wewpzPKwVaGEEtBM",
+            "genre": "ALT_ROCK"
+        },
+        {
+            "artistId": "1kDGbuxWknIKx4FlgWxiSp",
+            "genre": "ALT_ROCK"
+        },
+        {
+            "artistId": "39VNwvlQTqE9SvgPjjnMpc",
+            "genre": "ALT_ROCK"
+        },
+        {
+            "artistId": "1r1uxoy19fzMxunt3ONAkG",
+            "genre": "ALT_ROCK"
+        },
+        {
+            "artistId": "4kI8Ie27vjvonwaB2ePh8T",
+            "genre": "ALT_ROCK"
+        },
+        {
+            "artistId": "6oFs3qk4VepIVFdoD4jmsy",
+            "genre": "ALT_ROCK"
+        },
+        {
+            "artistId": "4pejUc4iciQfgdX6OKulQn",
+            "genre": "ALT_ROCK"
+        },
+        {
+            "artistId": "4Z8W4fKeB5YxbusRsdQVPb",
+            "genre": "ALT_ROCK"
+        },
+        {
+            "artistId": "2S5hlvw4CMtMGswFtfdK15",
+            "genre": "ALT_ROCK"
+        },
+        {
+            "artistId": "1dWEYMPtNmvSVaDNLgB6NV",
+            "genre": "ALT_ROCK"
+        },
+        {
+            "artistId": "6qyi8X6MdP1lu6B1K6yh3h",
+            "genre": "ALT_ROCK"
+        },
+        {
+            "artistId": "5INjqkS1o8h1imAzPqGZBb",
+            "genre": "ALT_ROCK"
+        },
+        {
+            "artistId": "3mIj9lX2MWuHmhNCA7LSCW",
+            "genre": "ALT_ROCK"
+        },
+        {
+            "artistId": "7mnBLXK823vNxN3UWB7Gfz",
+            "genre": "ALT_ROCK"
+        },
+        {
+            "artistId": "5ictveRyhWRs8Gt8Dvt1hS",
+            "genre": "ALT_ROCK"
+        },
+        {
+            "artistId": "7jZycSvTyx0W9poD4PjEIG",
+            "genre": "ALT_ROCK"
+        },
+        {
+            "artistId": "77SW9BnxLY8rJ0RciFqkHh",
+            "genre": "ALT_ROCK"
+        },
+        {
+            "artistId": "5kuJibJcwOC53s3OkoGMRA",
+            "genre": "ALT_ROCK"
+        },
+        {
+            "artistId": "0epOFNiUfyON9EYx7Tpr6V",
+            "genre": "ALT_ROCK"
+        },
+        {
+            "artistId": "3lDpdwM8KILepMHqBWUhIA",
+            "genre": "ALT_ROCK"
+        },
+        {
+            "artistId": "3YQKmKGau1PzlVlkL1iodx",
+            "genre": "ALT_ROCK"
+        },
+        {
+            "artistId": "536BYVgOnRky0xjsPT96zl",
+            "genre": "ALT_ROCK"
+        },
+        {
+            "artistId": "5BvJzeQpmsdsFp4HGUYUEx",
+            "genre": "ALT_ROCK"
+        },
+        {
+            "artistId": "0NIPkIjTV8mB795yEIiPYL",
+            "genre": "ALT_ROCK"
+        },
+        {
+            "artistId": "3btzEQD6sugImIHPMRgkwV",
+            "genre": "ALT_ROCK"
+        }
+    ],
+    "albums": [
+        {
+            "albumId": "01WnXszeMvaUaEp3NaQGFt",
+            "genre": "ALT_ROCK"
+        },
+        {
+            "albumId": "6ZB8qaR9JNuS0Q0bG1nbcH",
+            "genre": "ALT_ROCK"
+        },
+        {
+            "albumId": "78bpIziExqiI9qztvNFlQu",
+            "genre": "ALT_ROCK"
+        },
+        {
+            "albumId": "08fkw9uDP2KET6cPIl74Xo",
+            "genre": "ALT_ROCK"
+        },
+        {
+            "albumId": "3PpTsdpZmaLUh6RvViu9G7",
+            "genre": "ALT_ROCK"
+        },
+        {
+            "albumId": "1VpqO2dBJdAS3YAimXlhEM",
+            "genre": "ALT_ROCK"
+        },
+        {
+            "albumId": "6nL0U84JsEJ0cRsGCnsDnJ",
+            "genre": "ALT_ROCK"
+        },
+        {
+            "albumId": "5nJ9B1KiydXoYWAcyqlG76",
+            "genre": "ALT_ROCK"
+        },
+        {
+            "albumId": "6AoSTHrd6oEaeUYBEGdLTb",
+            "genre": "ALT_ROCK"
+        },
+        {
+            "albumId": "1VHxShkFJR9xA281epCtkz",
+            "genre": "ALT_ROCK"
+        },
+        {
+            "albumId": "3yOPq9R8gpDskoMD6XC21C",
+            "genre": "ALT_ROCK"
+        },
+        {
+            "albumId": "3peMqhMZ1HT8N4lvSS3GPu",
+            "genre": "ALT_ROCK"
+        },
+        {
+            "albumId": "30ly6F6Xl0TKmyBCU50Khv",
+            "genre": "ALT_ROCK"
+        },
+        {
+            "albumId": "0vi5ePiEHrGZJF7QhnDW2z",
+            "genre": "ALT_ROCK"
+        },
+        {
+            "albumId": "6J6VzS5nLEzIdAynrYzqfk",
+            "genre": "ALT_ROCK"
+        },
+        {
+            "albumId": "2OhUWm2KJay2YWeItU9YcH",
+            "genre": "ALT_ROCK"
+        },
+        {
+            "albumId": "5CZR6ljD0x9fTiS4mh9wMp",
+            "genre": "ALT_ROCK"
+        },
+        {
+            "albumId": "4hruYceqit29o6m4arpAql",
+            "genre": "ALT_ROCK"
+        },
+        {
+            "albumId": "1N2HeWMUjuAxYL7UnA63JH",
+            "genre": "ALT_ROCK"
+        },
+        {
+            "albumId": "6mm1Skz3JE6AXneya9Nyiv",
+            "genre": "ALT_ROCK"
+        },
+        {
+            "albumId": "0TGTGuc2vXv6ZECoAf52N0",
+            "genre": "ALT_ROCK"
+        },
+        {
+            "albumId": "0lw68yx3MhKflWFqCsGkIs",
+            "genre": "ALT_ROCK"
+        },
+        {
+            "albumId": "1UgdV58y1OX2oiTBbTFvlh",
+            "genre": "ALT_ROCK"
+        },
+        {
+            "albumId": "0DQyTVcDhK9wm0f6RaErWO",
+            "genre": "ALT_ROCK"
+        },
+        {
+            "albumId": "4wxoPjHSYFYurNyKaEiZNT",
+            "genre": "ALT_ROCK"
+        },
+        {
+            "albumId": "6VoOCCv0bXPrTHDncJyIgF",
+            "genre": "ALT_ROCK"
+        },
+        {
+            "albumId": "4w3NeXtywU398NYW4903rY",
+            "genre": "ALT_ROCK"
+        },
+        {
+            "albumId": "6dVIqQ8qmQ5GBnJ9shOYGE",
+            "genre": "ALT_ROCK"
+        },
+        {
+            "albumId": "2Qr40p1sv6NYrf9NPehsrO",
+            "genre": "ALT_ROCK"
+        },
+        {
+            "albumId": "73ctstwnbNifu5U902X2zL",
+            "genre": "ALT_ROCK"
+        },
+        {
+            "albumId": "477gzTVWjJWGc7kFTvzwma",
+            "genre": "ALT_ROCK"
+        },
+        {
+            "albumId": "79dL7FLiJFOO0EoehUHQBv",
+            "genre": "ALT_ROCK"
+        },
+        {
+            "albumId": "6WYCzTU5HEw63DbtbNupsA",
+            "genre": "ALT_ROCK"
+        },
+        {
+            "albumId": "5DLhV9yOvZ7IxVmljMXtNm",
+            "genre": "ALT_ROCK"
+        },
+        {
+            "albumId": "4qvFBtRrwbSgoH3nyVlTCp",
+            "genre": "ALT_ROCK"
+        },
+        {
+            "albumId": "1mJFgPeuLhU1PzLNBURdJC",
+            "genre": "ALT_ROCK"
+        },
+        {
+            "albumId": "1C4UGzx5gD9b3X0UfAhY7z",
+            "genre": "ALT_ROCK"
+        },
+        {
+            "albumId": "4piJq7R3gjUOxnYs6lDCTg",
+            "genre": "ALT_ROCK"
+        },
+        {
+            "albumId": "4vBvnlmaiyoEf04hLe5SLo",
+            "genre": "ALT_ROCK"
+        },
+        {
+            "albumId": "3yx8gEFlojRtt2WBhmxwfg",
+            "genre": "ALT_ROCK"
+        },
+        {
+            "albumId": "2fxQs4i9HfyRME7zjp0ZnB",
+            "genre": "ALT_ROCK"
+        },
+        {
+            "albumId": "2yNaksHgeMQM9Quse463b5",
+            "genre": "ALT_ROCK"
+        },
+        {
+            "albumId": "51VxHZphGLsI7aUPqIkJaz",
+            "genre": "ALT_ROCK"
+        },
+        {
+            "albumId": "6D9urpsOWWKtYvF6PaorGE",
+            "genre": "ALT_ROCK"
+        },
+        {
+            "albumId": "6ymdOG4omkllKRKOzkHQGL",
+            "genre": "ALT_ROCK"
+        },
+        {
+            "albumId": "3cQO7jp5S9qLBoIVtbkSM1",
+            "genre": "ALT_ROCK"
+        },
+        {
+            "albumId": "1GXMNFfoHF4sN7lG8gZq1j",
+            "genre": "ALT_ROCK"
+        },
+        {
+            "albumId": "1xpGyKyV26uPstk1Elgp9Q",
+            "genre": "ALT_ROCK"
+        },
+        {
+            "albumId": "0rPtXOMN42nsLDiShvGamv",
+            "genre": "ALT_ROCK"
+        },
+        {
+            "albumId": "0EabZMx74C2wyXhvMMO1eI",
+            "genre": "ALT_ROCK"
+        }
+    ],
+    "playlists": [
+        {
+            "playlistId": "37i9dQZF1DWUa8WMYIRY8Y",
+            "genre": "ALT_ROCK"
+        },
+        {
+            "playlistId": "4q2NzGlz5Nn6kB6Dh2vBKX",
+            "genre": "ALT_ROCK"
+        }
+    ]
+}

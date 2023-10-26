@@ -99,6 +99,10 @@ public class DataBaseController : MonoBehaviour
             _loadDataBaseButton.interactable = false;
 
             _loadingText.text = "DataBase correctly loaded !";
+            if (_dataBaseManager.DataBase.Albums != null)
+            {
+                _loadingText.text = String.Format("{0}\n{1} albums in it !", _loadingText.text, _dataBaseManager.DataBase.Albums.Length);
+            }
             _loadingText.color = Color.green;
         }
         else
@@ -160,7 +164,8 @@ public class DataBaseController : MonoBehaviour
 
     private void OnFeedPerformed()
     {
-        _loadingText.text = "Feed finished ! Don't forget to save your new DataBase !";
+        _loadingText.text = String.Format("Feed finished ! {0} new albums and {1} genres updated.\nDon't forget to save your new DataBase !", 
+            _dataBaseManager.GetNewAlbumsAddedCount(), _dataBaseManager.NewGenreAddedToArtistsCount);
         _loadingText.color = Color.green;
 
         _saveButton.interactable = true;

@@ -54,6 +54,11 @@ public class DataBaseManager
         _newGenresByPlaylistID = new Dictionary<string, string>();
     }
 
+    public int GetNewAlbumsAddedCount() 
+    {
+        return _newAlbumsByID.Count;
+    }
+
     #region LOAD_SAVE_JSON_METHODS
 
     public void LoadJSONDataBase(string jsonPath)

@@ -238,22 +238,7 @@ public class DataBaseManager
 
         foreach (ArtistInput artistInput in dataBaseInput.artists)
         {
-            isRequestPerformed = await TryAddGenreByArtistID(artistInput);
-
-            // Wait for 2 seconds to not raise limit of API request
-            if (isRequestPerformed)
-            {
-                await Task.Delay(_safeAPIWaitInMs);
-            }
-
-            currentOperation++;
-            _performSearchByDataBaseInputProgress = (currentOperation / totalOperations) * 100;
-            PerformSearchProgressUpdated?.Invoke(_performSearchByDataBaseInputProgress);
-        }
-
-        foreach (PlaylistInput playlistInput in dataBaseInput.playlists)
-        {
-            isRequestPerformed = await PerformPlaylistSearchByID(playlistInput);
+            isRequestPerformed = TryAddGenreByArtistID(artistInput);
 
             // Wait for 2 seconds to not raise limit of API request
             if (isRequestPerformed)
@@ -269,6 +254,21 @@ public class DataBaseManager
         foreach (AlbumInput albumInput in dataBaseInput.albums)
         {
             isRequestPerformed = await PerformAlbumSearchByID(albumInput);
+
+            // Wait for 2 seconds to not raise limit of API request
+            if (isRequestPerformed)
+            {
+                await Task.Delay(_safeAPIWaitInMs);
+            }
+
+            currentOperation++;
+            _performSearchByDataBaseInputProgress = (currentOperation / totalOperations) * 100;
+            PerformSearchProgressUpdated?.Invoke(_performSearchByDataBaseInputProgress);
+        }
+
+        foreach (PlaylistInput playlistInput in dataBaseInput.playlists)
+        {
+            isRequestPerformed = await PerformPlaylistSearchByID(playlistInput);
 
             // Wait for 2 seconds to not raise limit of API request
             if (isRequestPerformed)
@@ -311,7 +311,13 @@ public class DataBaseManager
 
                 foreach (PlaylistTrack<IPlayableItem> item in tracksList)
                 {
-                    CreateAndAddNewAlbumByFullTrack(item.Track as FullTrack, playlistInput.genre);
+                    ArtistInput artistInput = new ArtistInput();
+                    artistInput.artistId = (item.Track as FullTrack).Artists[0].Id;
+                    artistInput.genre = playlistInput.genre;
+
+                    string[] genres = TryAddGenreToArtists(artistInput);
+
+                    CreateAndAddNewAlbumByFullTrack(item.Track as FullTrack, playlistInput.genre, genres);
                 }
                 return true;
             }
@@ -333,27 +339,34 @@ public class DataBaseManager
                 Debug.LogWarning("There's no genre to attribute");
                 return false;
             }
-            if (_albumsInDataBaseByID.ContainsKey(albumInput.albumId))
-            {
-                if (_albumsInDataBaseByID[albumInput.albumId].TryAddGenre(albumInput.genre))
-                {
-                    NewGenreAddedToArtistsCount++;
-                }
-                return false;
-            }
+
 
             FullAlbum fullAlbum = await _client.Albums.Get(albumInput.albumId);
 
             if (fullAlbum != null)
             {
-                CreateAndAddNewAlbumByFullAlbum(fullAlbum, albumInput.genre);
+                ArtistInput artistInput = new ArtistInput();
+                artistInput.artistId = fullAlbum.Artists[0].Id;
+                artistInput.genre = albumInput.genre;
+
+                string[] genres = TryAddGenreToArtists(artistInput);
+
+                bool hasToPerformArtistTopTracksSearch = true;
+
+                if (hasToPerformArtistTopTracksSearch)
+                {
+                    PerformArtistTopTracksSearchByID(artistInput, genres);
+                    return true;
+                }
+
+                CreateAndAddNewAlbumByFullAlbum(fullAlbum, albumInput.genre, genres);
             }
             return true;
         }
         return false;
     }
 
-    private async void PerformArtistTopTracksSearchByID(ArtistInput artistInput)
+    private async void PerformArtistTopTracksSearchByID(ArtistInput artistInput, string[] genres)
     {
         if (_client != null && artistInput != null)
         {
@@ -374,7 +387,7 @@ public class DataBaseManager
             {
                 foreach (FullTrack item in topTracksResponse.Tracks)
                 {
-                    CreateAndAddNewAlbumByFullTrack(item, artistInput.genre);
+                    CreateAndAddNewAlbumByFullTrack(item, artistInput.genre, genres);
                 }
             }
             return;
@@ -382,7 +395,7 @@ public class DataBaseManager
         return;
     }
 
-    private async Task<bool> TryAddGenreByArtistID(ArtistInput artistInput)
+    private bool TryAddGenreByArtistID(ArtistInput artistInput)
     {
         if (_client != null && artistInput != null)
         {
@@ -397,49 +410,16 @@ public class DataBaseManager
                 return false;
             }
 
-            FullArtist artistResponse = await _client.Artists.Get(artistInput.artistId);
+            string[] genres = TryAddGenreToArtists(artistInput);
 
-            if (artistResponse != null)
+            bool hasToPerformArtistTopTracksSearch = true;
+
+            if (hasToPerformArtistTopTracksSearch)
             {
-                string artistName = artistResponse.Name;
-
-                bool isArtistExistInDataBase = false;
-                bool hasToPerformArtistTopTracksSearch = true;
-
-                foreach (Album album in _albumsInDataBaseByID.Values)
-                {
-                    isArtistExistInDataBase = album.Artists.Any(a => a.ToLowerInvariant().Equals(artistName.ToLowerInvariant()));
-                    if (isArtistExistInDataBase)
-                    {
-                        if (album.TryAddGenre(artistInput.genre))
-                        {
-                            NewGenreAddedToArtistsCount++;
-                        }
-
-                        hasToPerformArtistTopTracksSearch = false;
-                    }
-                }
-
-                foreach (Album album in _newAlbumsByID.Values)
-                {
-                    isArtistExistInDataBase = album.Artists.Any(a => a.ToLowerInvariant().Equals(artistName.ToLowerInvariant()));
-                    if (isArtistExistInDataBase)
-                    {
-                        if (album.TryAddGenre(artistInput.genre))
-                        {
-                            NewGenreAddedToArtistsCount++;
-                        }
-
-                        hasToPerformArtistTopTracksSearch = false;
-                    }
-                }
-
-                if (hasToPerformArtistTopTracksSearch)
-                {
-                    PerformArtistTopTracksSearchByID(artistInput);
-                }
+                PerformArtistTopTracksSearchByID(artistInput, genres);
+                return true;
             }
-            return true;
+            return false;
         }
         return false;
     }
@@ -448,33 +428,25 @@ public class DataBaseManager
 
     #region UTILS_SPOTIFY
 
-    private void CreateAndAddNewAlbumByFullTrack(FullTrack track, string genre)
+    private void CreateAndAddNewAlbumByFullTrack(FullTrack track, string genre, string[] genres)
     {
         if (track.Album.AlbumType.Equals("album"))
         {
             // If album is already in the dataBase
             if (_albumsInDataBaseByID.ContainsKey(track.Album.Id))
             {
-                if (_albumsInDataBaseByID[track.Album.Id].TryAddGenre(genre))
-                {
-                    NewGenreAddedToArtistsCount++;
-                }
                 return;
             }
 
             // if album has already been fetch
             if (_newAlbumsByID.ContainsKey(track.Album.Id))
             {
-                if (_newAlbumsByID[track.Album.Id].TryAddGenre(genre))
-                {
-                    NewGenreAddedToArtistsCount++;
-                }
                 return;
             }
 
             Album newAlbum = new Album();
-            newAlbum.Artists = ArtistsToString(track.Artists);
-            newAlbum.TryAddGenre(genre);
+            newAlbum.ArtistsName = ArtistsNameToString(track.Artists);
+            newAlbum.ArtistsId = ArtistsIdToString(track.Artists);
             newAlbum.Href = track.Album.Href;
             newAlbum.Id = track.Album.Id;
             newAlbum.ImagesUrls = ImagesToString(track.Album.Images);
@@ -482,33 +454,59 @@ public class DataBaseManager
             newAlbum.ReleaseDate = track.Album.ReleaseDate;
             newAlbum.Uri = track.Album.Uri;
 
+            if (genres != null)
+            {
+                foreach (string newGenre in genres)
+                {
+                    newAlbum.TryAddGenre(newGenre);
+                }
+            }
+            else
+            {
+                newAlbum.TryAddGenre(genre);
+            }
+
             _newAlbumsByID.Add(newAlbum.Id, newAlbum);
         }
     }
 
-    private void CreateAndAddNewAlbumByFullAlbum(FullAlbum fullAlbum, string genre)
+    private void CreateAndAddNewAlbumByFullAlbum(FullAlbum fullAlbum, string genre, string[] genres)
     {
+        // If album is already in the dataBase
+        if (_albumsInDataBaseByID.ContainsKey(fullAlbum.Id))
+        {
+            return;
+        }
+
         // if album has already been fetch
         if (_newAlbumsByID.ContainsKey(fullAlbum.Id))
         {
-            if (_newAlbumsByID[fullAlbum.Id].TryAddGenre(genre))
-            {
-                NewGenreAddedToArtistsCount++;
-            }
             return;
         }
 
         if (fullAlbum.AlbumType.Equals("album"))
         {
             Album newAlbum = new Album();
-            newAlbum.Artists = ArtistsToString(fullAlbum.Artists);
-            newAlbum.TryAddGenre(genre);
+            newAlbum.ArtistsName = ArtistsNameToString(fullAlbum.Artists);
+            newAlbum.ArtistsId = ArtistsIdToString(fullAlbum.Artists);
             newAlbum.Href = fullAlbum.Href;
             newAlbum.Id = fullAlbum.Id;
             newAlbum.ImagesUrls = ImagesToString(fullAlbum.Images);
             newAlbum.Name = fullAlbum.Name;
             newAlbum.ReleaseDate = fullAlbum.ReleaseDate;
             newAlbum.Uri = fullAlbum.Uri;
+
+            if (genres != null)
+            {
+                foreach(string newGenre in genres)
+                {
+                    newAlbum.TryAddGenre(newGenre);
+                }
+            }
+            else
+            {
+                newAlbum.TryAddGenre(genre);
+            }
 
             _newAlbumsByID.Add(newAlbum.Id, newAlbum);
         }
@@ -541,7 +539,7 @@ public class DataBaseManager
         return null;
     }
 
-    private string[] ArtistsToString(List<SimpleArtist> artists)
+    private string[] ArtistsNameToString(List<SimpleArtist> artists)
     {
         int artistsCount = artists.Count;
         string[] artistsString = new string[artistsCount];
@@ -550,6 +548,21 @@ public class DataBaseManager
         foreach (SimpleArtist artist in artists)
         {
             artistsString[i] = artist.Name;
+            i++;
+        }
+
+        return artistsString;
+    }
+
+    private string[] ArtistsIdToString(List<SimpleArtist> artists)
+    {
+        int artistsCount = artists.Count;
+        string[] artistsString = new string[artistsCount];
+
+        int i = 0;
+        foreach (SimpleArtist artist in artists)
+        {
+            artistsString[i] = artist.Id;
             i++;
         }
 
@@ -569,6 +582,94 @@ public class DataBaseManager
         }
 
         return imagesString;
+    }
+
+    private string[] TryAddGenreToArtists(ArtistInput artistInput)
+    {
+        bool isArtistExistInDataBase = false;
+        bool needToUpdateArtistGenres = false;
+        string[] genres = null;
+
+        foreach (Album album in _albumsInDataBaseByID.Values)
+        {
+            isArtistExistInDataBase = album.ArtistsId.Any(a => a.Equals(artistInput.artistId));
+            if (isArtistExistInDataBase)
+            {
+                if (album.TryAddGenre(artistInput.genre))
+                {
+                    NewGenreAddedToArtistsCount++;
+                    needToUpdateArtistGenres = true;
+                    genres = album.Genres;
+                    break;
+                }
+            }
+        }
+
+        if (!needToUpdateArtistGenres)
+        {
+            foreach (Album album in _newAlbumsByID.Values)
+            {
+                isArtistExistInDataBase = album.ArtistsId.Any(a => a.Equals(artistInput.artistId));
+                if (isArtistExistInDataBase)
+                {
+                    if (album.TryAddGenre(artistInput.genre))
+                    {
+                        NewGenreAddedToArtistsCount++;
+                        needToUpdateArtistGenres = true;
+                        genres = album.Genres;
+                        break;
+                    }
+                }
+            }
+        }
+
+        if (needToUpdateArtistGenres)
+        {
+            AddGenreToAllAlbumsInDataBaseWithSameArtistId(artistInput.artistId, genres);
+            AddGenreToAllNewAlbumsWithSameArtistId(artistInput.artistId, genres);
+        }
+
+        return genres;
+    }
+
+    private void AddGenreToAllAlbumsInDataBaseWithSameArtistId(string artistId, string[] genres)
+    {
+        bool isArtistExistInDataBase = false;
+
+        foreach (Album album in _albumsInDataBaseByID.Values)
+        {
+            isArtistExistInDataBase = album.ArtistsId.Any(a => a.Equals(artistId));
+            if (isArtistExistInDataBase)
+            {
+                foreach (string genre in genres)
+                {
+                    if (album.TryAddGenre(genre))
+                    {
+                        NewGenreAddedToArtistsCount++;
+                    }
+                }
+            }
+        }
+    }
+
+    private void AddGenreToAllNewAlbumsWithSameArtistId(string artistId, string[] genres)
+    {
+        bool isArtistExistInDataBase = false;
+
+        foreach (Album album in _newAlbumsByID.Values)
+        {
+            isArtistExistInDataBase = album.ArtistsId.Any(a => a.Equals(artistId));
+            if (isArtistExistInDataBase)
+            {
+                foreach (string genre in genres)
+                {
+                    if (album.TryAddGenre(genre))
+                    {
+                        NewGenreAddedToArtistsCount++;
+                    }
+                }
+            }
+        }
     }
 
     #endregion UTILS_SPOTIFY

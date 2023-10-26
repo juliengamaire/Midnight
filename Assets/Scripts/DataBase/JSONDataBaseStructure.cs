@@ -17,7 +17,8 @@ public class PlaylistId
     [System.Serializable]
 public class Album
 {
-    public string[] Artists;
+    public string[] ArtistsName;
+    public string[] ArtistsId;
     public string[] Genres;
     public string Href;
     public string Id;

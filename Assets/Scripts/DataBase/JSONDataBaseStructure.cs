@@ -4,6 +4,7 @@
 public class DataBase
 {
     public PlaylistId[] PlaylistIdsAlreadyFetched;
+    public Artist[] Artists;
     public Album[] Albums;
 }
 
@@ -14,18 +15,11 @@ public class PlaylistId
     public string Genre;
 }
 
-    [System.Serializable]
-public class Album
+[System.Serializable]
+public class Artist
 {
-    public string[] ArtistsName;
-    public string[] ArtistsId;
-    public string[] Genres;
-    public string Href;
     public string Id;
-    public string[] ImagesUrls;
-    public string Name;
-    public string ReleaseDate;
-    public string Uri;
+    public string[] Genres;
 
     public bool TryAddGenre(string genre)
     {
@@ -57,4 +51,17 @@ public class Album
         }
         return false;
     }
+}
+
+[System.Serializable]
+public class Album
+{
+    public string[] ArtistsName;
+    public string[] ArtistsId;
+    public string Href;
+    public string Id;
+    public string[] ImagesUrls;
+    public string Name;
+    public string ReleaseDate;
+    public string Uri;
 }

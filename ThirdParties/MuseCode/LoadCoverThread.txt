@@ -1,0 +1,45 @@
+Voici un exemple de script qui utilise `Task.Run()` pour charger les images de pochette d'album dans des threads séparés plutôt que d'utiliser des coroutines. C'est une opération plus complexe et il y a plusieurs choses à garder à l'esprit pour éviter les problèmes potentiels :
+
+1. Les tâches s'exécutent en dehors du contexte de synchronisation de Unity, vous ne pouvez donc pas interagir directement avec les objets Unity à l'intérieur de la tâche.
+2. Vous devez vous assurer que le code à l'intérieur de la tâche est thread-safe. En particulier, si plusieurs tâches accèdent aux mêmes ressources, vous devez utiliser des mécanismes de synchronisation appropriés pour éviter les conditions de concurrence
+3. Il faut faire attention à la gestion des exceptions dans les tâches, car une exception non traitée dans une tâche peut entraîner l'arrêt de l'application
+4. Enfin, il faut prendre en compte le coût de la création et de la gestion des threads. Même si les tâches sont plus légères que les threads, leur utilisation excessive peut toujours avoir un impact sur les performances:citation[18].
+
+Voici comment vous pouvez mettre à jour la méthode `LoadAlbumCover` pour utiliser `Task.Run()` :
+
+```csharp
+using System.Threading.Tasks;
+
+...
+
+async void LoadAlbumCover(GameObject vinyl, string url)
+{
+    try
+    {
+        byte[] imageData = null;
+
+        await Task.Run(() =>
+        {
+            using (UnityWebRequest www = UnityWebRequestTexture.GetTexture(url))
+            {
+                www.SendWebRequest().completed += asyncOp => { imageData = www.downloadHandler.data; };
+            }
+        });
+
+        if (imageData != null)
+        {
+            Texture2D texture = new Texture2D(2, 2);
+            texture.LoadImage(imageData);
+            vinyl.GetComponent<SpriteRenderer>().sprite = Sprite.Create(texture, new Rect(0, 0, texture.width, texture.height), new Vector2(0.5f, 0.5f));
+        }
+    }
+    catch (Exception e)
+    {
+        Debug.Log($"Failed to load image from {url}: {e.Message}");
+    }
+}
+```
+
+N'oubliez pas qu'avec cette approche, le chargement des images se fait en arrière-plan, ce qui peut améliorer les performances de votre application. Toutefois, le chargement des images peut ne pas être immédiat, en particulier si de nombreuses images sont chargées simultanément. Vous pouvez envisager d'ajouter une image de chargement ou une animation pour indiquer à l'utilisateur que l'image est en cours de chargement.
+
+C'est une opération plus avancée que l'utilisation de coroutines et nécessite une bonne compréhension du multithreading et de la programmation asynchrone en C#. Assurez-vous de tester soigneusement votre application pour vous assurer que tout fonctionne correctement. Pour plus d'informations sur l'utilisation des tâches avec Unity, vous pouvez consulter la documentation officielle de Unity:citation[18].

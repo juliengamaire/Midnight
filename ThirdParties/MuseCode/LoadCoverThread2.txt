@@ -1,0 +1,47 @@
+Pour utiliser une méthode asynchrone en C#, vous devez marquer la méthode avec le mot-clé `async` et utiliser le mot-clé `await` pour les opérations asynchrones à l'intérieur de la méthode:citation[18]. En utilisant `await`, votre méthode retournera le contrôle à l'appelant jusqu'à ce que l'opération asynchrone soit terminée, ce qui permet d'éviter de bloquer le thread principal.
+
+Voici un exemple de la méthode `LoadAlbumCover` modifiée pour être asynchrone :
+
+```csharp
+using System.Threading.Tasks;
+using UnityEngine.Networking;
+
+...
+
+async Task LoadAlbumCover(GameObject vinyl, string url)
+{
+    byte[] imageData = null;
+
+    await Task.Run(async () =>
+    {
+        using (UnityWebRequest www = UnityWebRequestTexture.GetTexture(url))
+        {
+            await www.SendWebRequest();
+
+            if (www.result == UnityWebRequest.Result.ConnectionError || www.result == UnityWebRequest.Result.ProtocolError)
+            {
+                Debug.LogError(www.error);
+            }
+            else
+            {
+                imageData = www.downloadHandler.data;
+            }
+        }
+    });
+
+    if (imageData != null)
+    {
+        Texture2D texture = new Texture2D(2, 2);
+        texture.LoadImage(imageData);
+        vinyl.GetComponent<SpriteRenderer>().sprite = Sprite.Create(texture, new Rect(0, 0, texture.width, texture.height), new Vector2(0.5f, 0.5f));
+    }
+}
+```
+
+Dans cet exemple, nous utilisons `Task.Run` pour effectuer l'opération de téléchargement en dehors du thread principal. La méthode `SendWebRequest` de `UnityWebRequest` est enveloppée par `await` pour indiquer que l'on attend que la requête soit terminée avant de continuer. Une fois la requête terminée, l'image est chargée dans la texture:citation[18].
+
+Il est important de noter que la méthode `LoadAlbumCover` doit maintenant être appelée avec `await` ou être lancée avec `Task.Run` pour qu'elle s'exécute réellement. Par exemple, vous pouvez utiliser `await LoadAlbumCover(vinyl, url);` pour lancer le téléchargement de l'image. 
+
+Il est également crucial de noter que l'API Unity n'est pas thread-safe, donc toute interaction avec les objets Unity doit être effectuée dans le contexte de synchronisation Unity:citation[18]. Dans cet exemple, la création de la texture et l'assignation du sprite sont effectuées après la fin de la tâche, donc elles se déroulent sur le thread principal.
+
+Les tâches asynchrones peuvent être un outil puissant pour améliorer les performances de votre application, mais elles peuvent également introduire de la complexité et des défis supplémentaires. Assurez-vous de bien comprendre le modèle asynchrone avant de l'intégrer dans votre code.

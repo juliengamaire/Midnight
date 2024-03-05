@@ -464,6 +464,8 @@ public class DataBaseManager
 
     private void CreateAndAddNewAlbumByFullTrack(FullTrack track, string genre)
     {
+        if (track.Album.AlbumType == null) return; 
+
         if (track.Album.AlbumType.Equals("album"))
         {
             // If album is already in the dataBase or new albums

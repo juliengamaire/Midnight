@@ -244,4 +244,42 @@ public class S4UUtility
 
         return lowest;
     }
+
+    /// <summary>
+    /// Gets the lowest resolution image stored in an array of images, but is still above the minimumWidth and minimumHeight.
+    /// </summary>
+    /// <param name="images">The list of images available</param>
+    /// <param name="minimumWidth">Minimum width of the target image</param>
+    /// <param name="minimumHeight">Minimum height of the target image</param>
+    /// <returns></returns>
+    public static Image GetHighestResolutionImage(List<Image> images, int minimumWidth = 250, int minimumHeight = 250)
+    {
+        if (images == null || images != null && images.Count <= 0)
+        {
+            return null;
+        }
+
+        Image highest = null;
+        foreach (Image img in images)
+        {
+            if (highest == null)
+            {
+                highest = img;
+            }
+            else
+            {
+                // Check if current img width and height is less than current lowest
+                if (img.Width > highest.Width && img.Height > highest.Height)
+                {
+                    // Check that current is more than minimum width
+                    if (img.Width > minimumWidth && img.Height > minimumHeight)
+                    {
+                        highest = img;
+                    }
+                }
+            }
+        }
+
+        return highest;
+    }
 }

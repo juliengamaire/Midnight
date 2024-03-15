@@ -1,3 +1,4 @@
+using SpotifyAPI.Web;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -22,13 +23,16 @@ public class TurnTableBaseButton : MonoBehaviour
 
     private void OnMouseEnter()
     {
-        Cursor.SetCursor(customCursor, hotSpot, cursorMode); // Change le curseur de la souris
+        UnityEngine.Cursor.SetCursor(customCursor, hotSpot, cursorMode); // Change le curseur de la souris
     }
 
     private void OnMouseExit()
     {
-        Cursor.SetCursor(null, Vector2.zero, cursorMode); // Rétablit le curseur par défaut
+        UnityEngine.Cursor.SetCursor(null, Vector2.zero, cursorMode); // Rétablit le curseur par défaut
     }
 
-    //public abstract void UpdateButton();
+    public virtual void UpdateButtonIcon(CurrentlyPlayingContext context)
+    {
+
+    }
 }

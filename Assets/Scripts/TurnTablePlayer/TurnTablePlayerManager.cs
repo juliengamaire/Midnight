@@ -1,4 +1,5 @@
 using SpotifyAPI.Web;
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
@@ -9,7 +10,14 @@ public class TurnTablePlayerManager : SpotifyPlayerListener
 {
     // Player middle media controls
     [SerializeField]
-    private TurnTableBaseButton _playPauseButton, _previousButton, _nextButton, _shuffleButton;
+    private TurnTableBaseButton _previousButton, _nextButton;
+    [SerializeField]
+    private TurnTablePlayPauseButton _playPauseButton;
+    [SerializeField]
+    private TurnTableShuffleButton _shuffleButton;
+    [SerializeField]
+    private TurnTableTransitionButton _transitionButton;
+    private bool _isTransitioning;
 
     [SerializeField]
     private TurnTableDecorator _turnTableDecorator;
@@ -65,7 +73,11 @@ public class TurnTablePlayerManager : SpotifyPlayerListener
         }
         if (_shuffleButton != null)
         {
-            _shuffleButton.OnButtonPressed += this.OnToggleShuffle;
+            _shuffleButton.OnButtonPressed += this.OnShuffleClicked;
+        }
+        if (_transitionButton != null)
+        {
+            _transitionButton.OnButtonPressed += this.OnTransitionClicked;
         }
 
         //// Configure progress slider
@@ -115,19 +127,17 @@ public class TurnTablePlayerManager : SpotifyPlayerListener
             //    _volumeSlider.value = context.Device.VolumePercent.Value;
             //}
 
-            //// Update play/pause btn sprite with correct play/pause sprite
-            //if (_playPauseButton != null)
-            //{
-            //    Image playPauseImg = _playPauseButton.transform.GetChild(0).GetComponent<Image>();
-            //    if (context.IsPlaying)
-            //    {
-            //        playPauseImg.sprite = _pauseSprite;
-            //    }
-            //    else
-            //    {
-            //        playPauseImg.sprite = _playSprite;
-            //    }
-            //}
+            // Update play/pause btn sprite with correct play/pause sprite
+            if (_playPauseButton != null)
+            {
+                _playPauseButton.UpdateButtonIcon(context);                
+            }
+
+            // Update shuffle btn sprite 
+            if (_shuffleButton != null)
+            {
+                _shuffleButton.UpdateButtonIcon(context);
+            }
 
             //FullTrack track = context.Item as FullTrack;
             //if (track != null)
@@ -167,7 +177,7 @@ public class TurnTablePlayerManager : SpotifyPlayerListener
         }
         if (_shuffleButton != null)
         {
-            _shuffleButton.OnButtonPressed -= this.OnToggleShuffle;
+            _shuffleButton.OnButtonPressed -= this.OnShuffleClicked;
         }
     }
 
@@ -260,7 +270,7 @@ public class TurnTablePlayerManager : SpotifyPlayerListener
         }
     }
 
-    private void OnToggleShuffle()
+    private void OnShuffleClicked()
     {
         SpotifyClient client = SpotifyService.Instance.GetSpotifyClient();
         if (client != null)
@@ -271,6 +281,15 @@ public class TurnTablePlayerManager : SpotifyPlayerListener
             PlayerShuffleRequest request = new PlayerShuffleRequest(!currentShuffleState);
 
             client.Player.SetShuffle(request);
+        }
+    }
+
+    private void OnTransitionClicked()
+    {
+        _isTransitioning = !_isTransitioning;
+        if (_transitionButton != null)
+        {
+            _transitionButton.UpdateButtonIcon(_isTransitioning);
         }
     }
 
